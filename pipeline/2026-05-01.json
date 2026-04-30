@@ -1,13 +1,13 @@
 {
   "date": "2026-05-01",
-  "pipeline_stage": "stage2_narrative",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-04-30T18:25:29.908661+09:00",
-  "updated_at": "2026-04-30T21:55:29.571316+09:00",
+  "updated_at": "2026-05-01T06:14:05.506062+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "BUY",
+    "direction_confidence": "中",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "-1.06%",
     "topix_change": null,
-    "dow_change": "-0.57%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
-    "vix": "18.4",
-    "usdjpy": "0.01円",
+    "dow_change": "49,652ドル（+1.62%）",
+    "nasdaq_change": "24,892（+0.89%）",
+    "futures_gap_pct": 1.4425116673737801,
+    "vix": "16.9",
+    "usdjpy": "156.53円（-3.03円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -198,7 +198,16 @@
         "sell_balance": 427100,
         "margin_date": "2026-04-24",
         "buy_change_4w": 0.4
-      }
+      },
+      "entry_current": {
+        "est_open": 614,
+        "low": 610,
+        "high": 617
+      },
+      "stop_loss_current": 602,
+      "target_current": 632,
+      "lot_current": 6840,
+      "gap_pct": 1.32
     },
     {
       "code": "6504",
@@ -269,7 +278,16 @@
         "sell_balance": 12200,
         "margin_date": "2026-04-24",
         "buy_change_4w": 12.1
-      }
+      },
+      "entry_current": {
+        "est_open": 13273,
+        "low": 13206,
+        "high": 13339
+      },
+      "stop_loss_current": 13020,
+      "target_current": 13671,
+      "lot_current": 316,
+      "gap_pct": 1.44
     },
     {
       "code": "3436",
@@ -345,7 +363,16 @@
         "sell_balance": 858500,
         "margin_date": "2026-04-24",
         "buy_change_4w": 0.2
-      }
+      },
+      "entry_current": {
+        "est_open": 2511,
+        "low": 2498,
+        "high": 2523
+      },
+      "stop_loss_current": 2463,
+      "target_current": 2586,
+      "lot_current": 1672,
+      "gap_pct": 1.41
     },
     {
       "code": "6315",
@@ -422,7 +449,16 @@
         "sell_balance": 244100,
         "margin_date": "2026-04-24",
         "buy_change_4w": 12.8
-      }
+      },
+      "entry_current": {
+        "est_open": 2962,
+        "low": 2947,
+        "high": 2976
+      },
+      "stop_loss_current": 2905,
+      "target_current": 3050,
+      "lot_current": 1417,
+      "gap_pct": 1.44
     },
     {
       "code": "3110",
@@ -499,7 +535,16 @@
         "sell_balance": 354700,
         "margin_date": "2026-04-24",
         "buy_change_4w": 19.1
-      }
+      },
+      "entry_current": {
+        "est_open": 28951,
+        "low": 28806,
+        "high": 29095
+      },
+      "stop_loss_current": 28400,
+      "target_current": 29819,
+      "lot_current": 145,
+      "gap_pct": 1.44
     },
     {
       "code": "7981",
@@ -568,7 +613,16 @@
         "sell_balance": 13300,
         "margin_date": "2026-04-24",
         "buy_change_4w": 79.7
-      }
+      },
+      "entry_current": {
+        "est_open": 3006,
+        "low": 2990,
+        "high": 3021
+      },
+      "stop_loss_current": 2948,
+      "target_current": 3096,
+      "lot_current": 1397,
+      "gap_pct": 1.42
     },
     {
       "code": "7259",
@@ -639,7 +693,16 @@
         "sell_balance": 53400,
         "margin_date": "2026-04-24",
         "buy_change_4w": 14.1
-      }
+      },
+      "entry_current": {
+        "est_open": 2523,
+        "low": 2510,
+        "high": 2535
+      },
+      "stop_loss_current": 2475,
+      "target_current": 2598,
+      "lot_current": 1664,
+      "gap_pct": 1.41
     },
     {
       "code": "4043",
@@ -721,7 +784,16 @@
         "sell_balance": 32700,
         "margin_date": "2026-04-24",
         "buy_change_4w": -7.4
-      }
+      },
+      "entry_current": {
+        "est_open": 4055,
+        "low": 4034,
+        "high": 4075
+      },
+      "stop_loss_current": 3977,
+      "target_current": 4176,
+      "lot_current": 1035,
+      "gap_pct": 1.43
     },
     {
       "code": "6472",
@@ -783,7 +855,16 @@
         "sell_balance": 355600,
         "margin_date": "2026-04-24",
         "buy_change_4w": 11.5
-      }
+      },
+      "entry_current": {
+        "est_open": 387,
+        "low": 385,
+        "high": 388
+      },
+      "stop_loss_current": 379,
+      "target_current": 398,
+      "lot_current": 10852,
+      "gap_pct": 1.31
     },
     {
       "code": "7282",
@@ -842,7 +923,16 @@
         "sell_balance": 33100,
         "margin_date": "2026-04-24",
         "buy_change_4w": 4.4
-      }
+      },
+      "entry_current": {
+        "est_open": 4693,
+        "low": 4669,
+        "high": 4716
+      },
+      "stop_loss_current": 4603,
+      "target_current": 4833,
+      "lot_current": 894,
+      "gap_pct": 1.43
     },
     {
       "code": "9984",
@@ -916,7 +1006,16 @@
         "sell_balance": 8204500,
         "margin_date": "2026-04-24",
         "buy_change_4w": -42.3
-      }
+      },
+      "entry_current": {
+        "est_open": 5294,
+        "low": 5267,
+        "high": 5320
+      },
+      "stop_loss_current": 5193,
+      "target_current": 5452,
+      "lot_current": 793,
+      "gap_pct": 1.44
     },
     {
       "code": "7220",
@@ -986,7 +1085,16 @@
         "sell_balance": 233700,
         "margin_date": "2026-04-24",
         "buy_change_4w": -42.4
-      }
+      },
+      "entry_current": {
+        "est_open": 4356,
+        "low": 4334,
+        "high": 4377
+      },
+      "stop_loss_current": 4273,
+      "target_current": 4486,
+      "lot_current": 964,
+      "gap_pct": 1.42
     },
     {
       "code": "5803",
@@ -1068,7 +1176,16 @@
         "sell_balance": 3303600,
         "margin_date": "2026-04-24",
         "buy_change_4w": -14.1
-      }
+      },
+      "entry_current": {
+        "est_open": 6057,
+        "low": 6026,
+        "high": 6087
+      },
+      "stop_loss_current": 5941,
+      "target_current": 6238,
+      "lot_current": 693,
+      "gap_pct": 1.44
     }
   ],
   "history": [
@@ -1086,6 +1203,11 @@
       "stage": "stage2",
       "action": "ナラティブ照合完了: RED リスク5件 触媒3件 (active:9 standby:4)",
       "timestamp": "2026-04-30T21:55:29.571293+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: BUY（中）先物+1.4% (active:9 standby:4)",
+      "timestamp": "2026-05-01T06:14:05.506035+09:00"
     }
   ]
 }
