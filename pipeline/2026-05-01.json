@@ -1,15 +1,15 @@
 {
   "date": "2026-05-01",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-04-30T18:25:29.908661+09:00",
-  "updated_at": "2026-05-01T06:14:05.506062+09:00",
+  "updated_at": "2026-05-01T07:28:22.031887+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
     "direction_7am": "BUY",
     "direction_confidence": "中",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "YELLOW",
+    "effective_jiai": "YELLOW",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 1.4425116673737801,
     "vix": "16.9",
     "usdjpy": "156.53円（-3.03円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "食品",
+        "change": 0.7
+      },
+      {
+        "name": "素材・化学",
+        "change": -0.22
+      },
+      {
+        "name": "エネルギー資源",
+        "change": -0.25
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "銀行",
+        "change": -2.47
+      },
+      {
+        "name": "自動車・輸送機",
+        "change": -2.18
+      },
+      {
+        "name": "電力・ガス",
+        "change": -2.17
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡封鎖継続・原油急騰・日銀タカ派懸念",
@@ -491,7 +517,8 @@
         "📊財務良好",
         "📊高収益",
         "📈増益",
-        "⚠️決算接近（推定14日後・2026-05-15）"
+        "⚠️決算接近（推定14日後・2026-05-15）",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -518,6 +545,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定14日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -571,7 +603,7 @@
       "stop_loss_base": 2907,
       "target_base": 3052,
       "lot_base": 1417,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📈増益",
@@ -598,6 +630,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+79.7%"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -649,12 +686,13 @@
       "stop_loss_base": 2440,
       "target_base": 2562,
       "lot_base": 1688,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📈増益",
         "⚠️決算接近（推定14日後・2026-05-15）",
-        "⚠️信用倍率23.79倍"
+        "⚠️信用倍率23.79倍",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -676,6 +714,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率23.79倍"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -735,7 +783,8 @@
         "📊財務良好",
         "⚠️決算接近（推定14日後・2026-05-15）",
         "⚠️信用倍率24.22倍",
-        "⚠️ホルムズ海峡封鎖"
+        "⚠️ホルムズ海峡封鎖",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -767,6 +816,11 @@
           "stage": "stage2",
           "action": "active → standby",
           "reason": "高リスク: ホルムズ海峡封鎖 → 化学セクター逆風"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -820,7 +874,7 @@
       "stop_loss_base": 374,
       "target_base": 393,
       "lot_base": 10994,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
@@ -841,6 +895,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️低収益"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -891,10 +950,11 @@
       "stop_loss_base": 4539,
       "target_base": 4765,
       "lot_base": 907,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️決算接近（推定14日後・2026-05-15）"
+        "⚠️決算接近（推定14日後・2026-05-15）",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -906,6 +966,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定14日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1046,7 +1116,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "⚠️決算接近（推定14日後・2026-05-15）",
-        "📉買残整理4w-42.4%"
+        "📉買残整理4w-42.4%",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -1068,6 +1139,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-42.4%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1208,6 +1284,11 @@
       "stage": "stage3",
       "action": "7am判定: BUY（中）先物+1.4% (active:9 standby:4)",
       "timestamp": "2026-05-01T06:14:05.506035+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: YELLOW→effective:YELLOW (active:5 standby:8)",
+      "timestamp": "2026-05-01T07:28:22.031861+09:00"
     }
   ]
 }
