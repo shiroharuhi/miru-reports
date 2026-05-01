@@ -1,8 +1,8 @@
 {
   "date": "2026-05-01",
-  "pipeline_stage": "stage4_morning",
+  "pipeline_stage": "stage5_final",
   "created_at": "2026-04-30T18:25:29.908661+09:00",
-  "updated_at": "2026-05-01T07:28:22.031887+09:00",
+  "updated_at": "2026-05-01T08:55:17.518730+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
@@ -10,8 +10,8 @@
     "direction_confidence": "中",
     "morning_jiai": "YELLOW",
     "effective_jiai": "YELLOW",
-    "futures_direction": null,
-    "final_judgment": null
+    "futures_direction": "STRONG_UP",
+    "final_judgment": "🟡 5分足で方向確認後エントリー"
   },
   "market": {
     "nikkei_change": "-1.06%",
@@ -306,12 +306,12 @@
         "buy_change_4w": 12.1
       },
       "entry_current": {
-        "est_open": 13273,
-        "low": 13206,
-        "high": 13339
+        "est_open": 13274,
+        "low": 13207,
+        "high": 13340
       },
-      "stop_loss_current": 13020,
-      "target_current": 13671,
+      "stop_loss_current": 13021,
+      "target_current": 13672,
       "lot_current": 316,
       "gap_pct": 1.44
     },
@@ -569,14 +569,14 @@
         "buy_change_4w": 19.1
       },
       "entry_current": {
-        "est_open": 28951,
-        "low": 28806,
-        "high": 29095
+        "est_open": 28954,
+        "low": 28809,
+        "high": 29098
       },
-      "stop_loss_current": 28400,
-      "target_current": 29819,
+      "stop_loss_current": 28403,
+      "target_current": 29822,
       "lot_current": 145,
-      "gap_pct": 1.44
+      "gap_pct": 1.45
     },
     {
       "code": "7981",
@@ -652,14 +652,14 @@
         "buy_change_4w": 79.7
       },
       "entry_current": {
-        "est_open": 3006,
-        "low": 2990,
-        "high": 3021
+        "est_open": 3007,
+        "low": 2991,
+        "high": 3022
       },
-      "stop_loss_current": 2948,
-      "target_current": 3096,
-      "lot_current": 1397,
-      "gap_pct": 1.42
+      "stop_loss_current": 2949,
+      "target_current": 3097,
+      "lot_current": 1396,
+      "gap_pct": 1.45
     },
     {
       "code": "7259",
@@ -743,14 +743,14 @@
         "buy_change_4w": 14.1
       },
       "entry_current": {
-        "est_open": 2523,
-        "low": 2510,
-        "high": 2535
+        "est_open": 2524,
+        "low": 2511,
+        "high": 2536
       },
-      "stop_loss_current": 2475,
-      "target_current": 2598,
+      "stop_loss_current": 2476,
+      "target_current": 2599,
       "lot_current": 1664,
-      "gap_pct": 1.41
+      "gap_pct": 1.45
     },
     {
       "code": "4043",
@@ -840,14 +840,14 @@
         "buy_change_4w": -7.4
       },
       "entry_current": {
-        "est_open": 4055,
-        "low": 4034,
-        "high": 4075
+        "est_open": 4056,
+        "low": 4035,
+        "high": 4076
       },
-      "stop_loss_current": 3977,
-      "target_current": 4176,
+      "stop_loss_current": 3978,
+      "target_current": 4177,
       "lot_current": 1035,
-      "gap_pct": 1.43
+      "gap_pct": 1.45
     },
     {
       "code": "6472",
@@ -995,14 +995,14 @@
         "buy_change_4w": 4.4
       },
       "entry_current": {
-        "est_open": 4693,
-        "low": 4669,
-        "high": 4716
+        "est_open": 4694,
+        "low": 4670,
+        "high": 4717
       },
-      "stop_loss_current": 4603,
-      "target_current": 4833,
+      "stop_loss_current": 4604,
+      "target_current": 4834,
       "lot_current": 894,
-      "gap_pct": 1.43
+      "gap_pct": 1.45
     },
     {
       "code": "9984",
@@ -1163,14 +1163,14 @@
         "buy_change_4w": -42.4
       },
       "entry_current": {
-        "est_open": 4356,
-        "low": 4334,
-        "high": 4377
+        "est_open": 4357,
+        "low": 4335,
+        "high": 4378
       },
-      "stop_loss_current": 4273,
-      "target_current": 4486,
-      "lot_current": 964,
-      "gap_pct": 1.42
+      "stop_loss_current": 4274,
+      "target_current": 4487,
+      "lot_current": 963,
+      "gap_pct": 1.44
     },
     {
       "code": "5803",
@@ -1289,6 +1289,11 @@
       "stage": "stage4",
       "action": "地合い確定: YELLOW→effective:YELLOW (active:5 standby:8)",
       "timestamp": "2026-05-01T07:28:22.031861+09:00"
+    },
+    {
+      "stage": "stage5",
+      "action": "最終確認: 🟡 5分足で方向確認後エントリー 先物+1.5% (active:5 standby:8)",
+      "timestamp": "2026-05-01T08:55:17.518730+09:00"
     }
   ]
 }
