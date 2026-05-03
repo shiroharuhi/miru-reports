@@ -1,15 +1,15 @@
 {
   "date": "2026-05-04",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-01T17:56:03.149928+09:00",
-  "updated_at": "2026-05-04T05:58:46.027281+09:00",
+  "updated_at": "2026-05-04T07:07:07.032679+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
     "narrative_status": "RED",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "YELLOW",
+    "effective_jiai": "YELLOW",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": -0.6766917293233082,
     "vix": "17.0",
     "usdjpy": "157.03円（-3.15円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "商社・卸売",
+        "change": 3.39
+      },
+      {
+        "name": "エネルギー資源",
+        "change": 0.89
+      },
+      {
+        "name": "運輸・物流",
+        "change": 0.58
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "建設・資材",
+        "change": -2.34
+      },
+      {
+        "name": "電力・ガス",
+        "change": -1.63
+      },
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -1.5
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡封鎖継続・FRB利下げ圧力・半導体争奪激化",
@@ -128,7 +154,8 @@
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定13日後・2026-05-15）",
-        "🔥買残急増4w+52.9%"
+        "🔥買残急増4w+52.9%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -150,6 +177,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+52.9%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -280,7 +312,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️決算接近（推定13日後・2026-05-15）",
-        "⚠️信用倍率58.58倍"
+        "⚠️信用倍率58.58倍",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -302,6 +335,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率58.58倍"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -451,7 +489,8 @@
         "⚠️ROE低迷",
         "⚠️低収益",
         "📉減益",
-        "⚠️決算接近（推定13日後・2026-05-15）"
+        "⚠️決算接近（推定13日後・2026-05-15）",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -478,6 +517,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定13日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -530,7 +574,7 @@
       "stop_loss_base": 3212,
       "target_base": 3373,
       "lot_base": 1282,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
@@ -551,6 +595,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📊高収益"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -687,7 +736,7 @@
       "stop_loss_base": 4104,
       "target_base": 4309,
       "lot_base": 1003,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
@@ -714,6 +763,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率24.22倍"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -767,12 +821,13 @@
       "stop_loss_base": 2750,
       "target_base": 2888,
       "lot_base": 1497,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
         "⚠️信用倍率16.01倍",
-        "🔥買残急増4w+89.5%"
+        "🔥買残急増4w+89.5%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -794,6 +849,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+89.5%"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -845,7 +910,7 @@
       "stop_loss_base": 12929,
       "target_base": 13575,
       "lot_base": 318,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
@@ -872,6 +937,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率23.55倍"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -1072,7 +1142,7 @@
       "stop_loss_base": 2336,
       "target_base": 2453,
       "lot_base": 1763,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
@@ -1099,6 +1169,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定13日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -1150,7 +1225,7 @@
       "stop_loss_base": 4257,
       "target_base": 4470,
       "lot_base": 967,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
@@ -1177,6 +1252,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定13日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -1226,6 +1306,11 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物-0.7% (active:13 standby:1)",
       "timestamp": "2026-05-04T05:58:46.027253+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: YELLOW→effective:YELLOW (active:7 standby:7)",
+      "timestamp": "2026-05-04T07:07:07.032647+09:00"
     }
   ]
 }
