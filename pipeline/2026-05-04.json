@@ -1,11 +1,11 @@
 {
   "date": "2026-05-04",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-01T17:56:03.149928+09:00",
-  "updated_at": "2026-05-01T17:57:36.579279+09:00",
+  "updated_at": "2026-05-03T20:58:54.259388+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
-    "narrative_status": null,
+    "narrative_status": "RED",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,77 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "ホルムズ海峡封鎖継続・FRB利下げ圧力・半導体争奪激化",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "エネルギー",
+          "石油精製",
+          "海運",
+          "商社"
+        ],
+        "detail": "イラン革命防衛隊による事実上封鎖継続、原油価格高止まりで電力・ガス会社への燃料費圧迫"
+      },
+      {
+        "topic": "トランプ関税政策",
+        "severity": "high",
+        "timeframe": "short_term",
+        "sectors": [
+          "自動車",
+          "機械",
+          "電機"
+        ],
+        "detail": "相互関税15%維持、FRB議長解任リスクで金融市場の混乱懸念"
+      },
+      {
+        "topic": "中国レアアース規制",
+        "severity": "high",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "電子部品",
+          "自動車"
+        ],
+        "detail": "米中100%追加関税の報復措置で半導体製造に必要なレアアース供給途絶リスク"
+      },
+      {
+        "topic": "日銀利上げ圧力",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "銀行",
+          "不動産",
+          "REITs"
+        ],
+        "detail": "3委員が利上げ提案で反対、物価上振れリスクで金融引き締め加速の可能性"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "米国決算好調",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "半導体",
+          "AI関連",
+          "ハイテク"
+        ],
+        "detail": "ナスダック・S&P500連日最高値更新で日本の半導体・AI関連株に波及効果"
+      },
+      {
+        "topic": "商社決算好調",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "総合商社",
+          "資源"
+        ],
+        "detail": "住友商事・三菱商事・伊藤忠の増益見通しで商社株全体への買い期待"
+      }
+    ]
   },
   "candidates": [
     {
@@ -480,11 +548,12 @@
       "stop_loss_base": 2943,
       "target_base": 3090,
       "lot_base": 1400,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📉減益",
-        "⚠️決算接近（推定13日後・2026-05-15）"
+        "⚠️決算接近（推定13日後・2026-05-15）",
+        "⚠️トランプ関税政策"
       ],
       "history": [
         {
@@ -501,6 +570,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定13日後・2026-05-15）"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️トランプ関税政策"
+        },
+        {
+          "stage": "stage2",
+          "action": "active → standby",
+          "reason": "高リスク: トランプ関税政策 → 機械セクター逆風"
         }
       ],
       "fundamental": {
@@ -1011,6 +1090,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 14/14銘柄 決算接近警告12 APIリクエスト56",
       "timestamp": "2026-05-01T17:57:36.579154+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: RED リスク4件 触媒2件 (active:13 standby:1)",
+      "timestamp": "2026-05-03T20:58:54.259364+09:00"
     }
   ]
 }
