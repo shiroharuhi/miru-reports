@@ -1,11 +1,11 @@
 {
   "date": "2026-05-05",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-04T18:30:57.871767+09:00",
-  "updated_at": "2026-05-04T18:32:29.674106+09:00",
+  "updated_at": "2026-05-04T21:57:02.895383+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "YELLOW",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,89 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "中東情勢継続とFRB慎重姿勢で原油高・金融政策不透明感",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖継続",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "海運",
+          "石油",
+          "電力",
+          "商社"
+        ],
+        "detail": "停戦延長も通航は95%減で事実上封鎖継続、原油・LNG供給制約"
+      },
+      {
+        "topic": "FRB政策金利据置継続",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "銀行",
+          "不動産",
+          "REIT"
+        ],
+        "detail": "トランプ関税インフレ懸念で利下げ慎重、年内2回予想も不透明"
+      },
+      {
+        "topic": "米中貿易戦争再燃懸念",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "機械",
+          "商社"
+        ],
+        "detail": "中国レアアース規制に100%追加関税表明、11月実施予定"
+      },
+      {
+        "topic": "日銀利上げ圧力継続",
+        "severity": "low",
+        "timeframe": "medium_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "REIT"
+        ],
+        "detail": "植田総裁が追加利上げ示唆も中東情勢で慎重姿勢"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "原油価格高騰",
+        "direction": "negative",
+        "timeframe": "immediate",
+        "sectors": [
+          "運輸",
+          "電力",
+          "小売"
+        ],
+        "detail": "ホルムズ海峡封鎖で供給制約、インフレ再燃懸念"
+      },
+      {
+        "topic": "半導体AI需要堅調",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "AI",
+          "精密機器"
+        ],
+        "detail": "中国輸出増や台湾受注好調で関連銘柄支援"
+      },
+      {
+        "topic": "円安進行",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "輸出",
+          "自動車",
+          "機械"
+        ],
+        "detail": "ドル円158円突入、輸出企業収益押上げも輸入コスト増"
+      }
+    ]
   },
   "candidates": [
     {
@@ -286,7 +366,8 @@
         "⚠️低収益",
         "📉減益",
         "⚠️決算接近（推定10日後・2026-05-15）",
-        "🔥買残急増4w+153.8%"
+        "🔥買残急増4w+153.8%",
+        "📈半導体AI需要堅調"
       ],
       "history": [
         {
@@ -318,6 +399,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+153.8%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈半導体AI需要堅調"
         }
       ],
       "fundamental": {
@@ -519,7 +605,9 @@
       "added_at": "stage1_screening",
       "flags": [
         "📉減益",
-        "⚠️決算接近（推定10日後・2026-05-15）"
+        "⚠️決算接近（推定10日後・2026-05-15）",
+        "⚠️米中貿易戦争再燃懸念",
+        "📈円安進行"
       ],
       "history": [
         {
@@ -536,6 +624,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定10日後・2026-05-15）"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争再燃懸念"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈円安進行"
         }
       ],
       "fundamental": {
@@ -1105,6 +1203,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 14/14銘柄 決算接近警告12 APIリクエスト56",
       "timestamp": "2026-05-04T18:32:29.674012+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク4件 触媒3件 (active:10 standby:4)",
+      "timestamp": "2026-05-04T21:57:02.895360+09:00"
     }
   ]
 }
