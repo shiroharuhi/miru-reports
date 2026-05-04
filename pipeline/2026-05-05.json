@@ -1,15 +1,15 @@
 {
   "date": "2026-05-05",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-04T18:30:57.871767+09:00",
-  "updated_at": "2026-05-05T06:17:41.661897+09:00",
+  "updated_at": "2026-05-05T07:32:44.857234+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "GREEN",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 0.11775590882328202,
     "vix": "18.3",
     "usdjpy": "157.17円（+0.19円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "商社・卸売",
+        "change": 3.39
+      },
+      {
+        "name": "エネルギー資源",
+        "change": 0.89
+      },
+      {
+        "name": "運輸・物流",
+        "change": 0.58
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "建設・資材",
+        "change": -2.34
+      },
+      {
+        "name": "電力・ガス",
+        "change": -1.63
+      },
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -1.5
+      }
+    ]
   },
   "narrative": {
     "headline": "中東情勢継続とFRB慎重姿勢で原油高・金融政策不透明感",
@@ -145,7 +171,8 @@
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定10日後・2026-05-15）",
-        "🔥買残急増4w+52.9%"
+        "🔥買残急増4w+52.9%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -167,6 +194,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+52.9%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -307,7 +339,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️決算接近（推定10日後・2026-05-15）",
-        "⚠️信用倍率58.58倍"
+        "⚠️信用倍率58.58倍",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -329,6 +362,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率58.58倍"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -494,7 +532,8 @@
         "⚠️ROE低迷",
         "⚠️低収益",
         "📉減益",
-        "⚠️決算接近（推定10日後・2026-05-15）"
+        "⚠️決算接近（推定10日後・2026-05-15）",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -521,6 +560,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定10日後・2026-05-15）"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -836,7 +880,8 @@
       "flags": [
         "📊ROE優秀",
         "⚠️信用倍率16.01倍",
-        "🔥買残急増4w+89.5%"
+        "🔥買残急増4w+89.5%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -858,6 +903,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+89.5%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1339,6 +1389,16 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+0.1% (active:10 standby:4)",
       "timestamp": "2026-05-05T06:17:41.661871+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブYELLOW → GREEN維持（警戒付き）",
+      "timestamp": "2026-05-05T07:32:44.857178+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:GREEN (active:10 standby:4)",
+      "timestamp": "2026-05-05T07:32:44.857208+09:00"
     }
   ]
 }
