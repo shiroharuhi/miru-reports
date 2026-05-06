@@ -1,11 +1,11 @@
 {
   "date": "2026-05-07",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-06T18:36:19.337541+09:00",
-  "updated_at": "2026-05-06T18:37:49.316252+09:00",
+  "updated_at": "2026-05-06T22:02:20.530952+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "RED",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,80 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "ホルムズ海峡封鎖継続でエネルギーリスク深刻、米FRB利下げ期待",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "石油・石炭",
+          "海運",
+          "電力・ガス",
+          "石油化学"
+        ],
+        "detail": "事実上封鎖が継続、通航量が通常の3%まで激減し原油価格高止まり"
+      },
+      {
+        "topic": "米中貿易戦争再燃",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "自動車",
+          "商社",
+          "機械"
+        ],
+        "detail": "中国レアアース規制と米国100%関税応酬、貿易戦争懸念"
+      },
+      {
+        "topic": "トランプ関税政策",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "輸出関連",
+          "自動車",
+          "電機",
+          "商社"
+        ],
+        "detail": "FRBとの対立で金融政策不透明、関税違法判決も影響限定的"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "FRB利下げ期待",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "内需株"
+        ],
+        "detail": "市場は年内4回以上の利下げを織り込み、金融緩和観測強まる"
+      },
+      {
+        "topic": "日銀利上げスタンス",
+        "direction": "negative",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "内需株"
+        ],
+        "detail": "植田総裁が中東情勢下でも利上げ継続の可能性示唆"
+      },
+      {
+        "topic": "中国経済持ち直し",
+        "direction": "positive",
+        "timeframe": "medium_term",
+        "sectors": [
+          "半導体",
+          "機械",
+          "化学"
+        ],
+        "detail": "1-3月GDP5.0%成長達成、AI関連半導体需要が好調"
+      }
+    ]
   },
   "candidates": [
     {
@@ -519,7 +590,9 @@
       "added_at": "stage1_screening",
       "flags": [
         "📉減益",
-        "⚠️決算接近（推定8日後・2026-05-15）"
+        "⚠️決算接近（推定8日後・2026-05-15）",
+        "⚠️米中貿易戦争再燃",
+        "📈中国経済持ち直し"
       ],
       "history": [
         {
@@ -536,6 +609,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️決算接近（推定8日後・2026-05-15）"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争再燃"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈中国経済持ち直し"
         }
       ],
       "fundamental": {
@@ -585,12 +668,14 @@
       "stop_loss_base": 4104,
       "target_base": 4309,
       "lot_base": 1003,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定8日後・2026-05-15）",
-        "⚠️信用倍率24.22倍"
+        "⚠️信用倍率24.22倍",
+        "⚠️ホルムズ海峡封鎖",
+        "📈中国経済持ち直し"
       ],
       "history": [
         {
@@ -612,6 +697,21 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率24.22倍"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖"
+        },
+        {
+          "stage": "stage2",
+          "action": "active → standby",
+          "reason": "高リスク: ホルムズ海峡封鎖 → 化学セクター逆風"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈中国経済持ち直し"
         }
       ],
       "fundamental": {
@@ -1105,6 +1205,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 14/14銘柄 決算接近警告12 APIリクエスト56",
       "timestamp": "2026-05-06T18:37:49.316130+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: RED リスク3件 触媒3件 (active:9 standby:5)",
+      "timestamp": "2026-05-06T22:02:20.530930+09:00"
     }
   ],
   "stage_metadata": {
@@ -1113,7 +1218,11 @@
       "completed_at": "2026-05-06T18:36:19.904120+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-06T18:36:19.904124+09:00"
+      "started_at": "2026-05-06T18:36:19.904124+09:00",
+      "completed_at": "2026-05-06T22:02:20.530839+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-06T22:02:20.530845+09:00"
     }
   }
 }
