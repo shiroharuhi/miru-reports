@@ -1,15 +1,15 @@
 {
   "date": "2026-05-07",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-06T18:36:19.337541+09:00",
-  "updated_at": "2026-05-07T06:20:45.977151+09:00",
+  "updated_at": "2026-05-07T07:13:17.108968+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "YELLOW",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 2.4983509234828496,
     "vix": "17.4",
     "usdjpy": "156.28円（-0.91円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "商社・卸売",
+        "change": 3.39
+      },
+      {
+        "name": "エネルギー資源",
+        "change": 0.89
+      },
+      {
+        "name": "運輸・物流",
+        "change": 0.58
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "建設・資材",
+        "change": -2.34
+      },
+      {
+        "name": "電力・ガス",
+        "change": -1.63
+      },
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -1.5
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡封鎖継続でエネルギーリスク深刻、米FRB利下げ期待",
@@ -137,7 +163,8 @@
         "📊財務良好",
         "⚠️決算接近（推定8日後・2026-05-15）",
         "🔥買残急増4w+52.9%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -164,6 +191,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -311,7 +343,8 @@
         "⚠️ROE低迷",
         "⚠️決算接近（推定8日後・2026-05-15）",
         "⚠️信用倍率58.58倍",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -338,6 +371,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -504,7 +542,8 @@
         "⚠️低収益",
         "📉減益",
         "⚠️決算接近（推定8日後・2026-05-15）",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -536,6 +575,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -593,7 +637,7 @@
       "stop_loss_base": 3212,
       "target_base": 3373,
       "lot_base": 1282,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
@@ -620,6 +664,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -676,7 +725,7 @@
       "stop_loss_base": 2943,
       "target_base": 3090,
       "lot_base": 1400,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📉減益",
@@ -715,6 +764,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -875,13 +929,14 @@
       "stop_loss_base": 2750,
       "target_base": 2888,
       "lot_base": 1497,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
         "⚠️信用倍率16.01倍",
         "🔥買残急増4w+89.5%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -908,6 +963,16 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -964,7 +1029,7 @@
       "stop_loss_base": 12929,
       "target_base": 13575,
       "lot_base": 318,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
@@ -997,6 +1062,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -1395,6 +1465,16 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+2.5% (active:9 standby:5)",
       "timestamp": "2026-05-07T06:20:45.977122+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブRED → YELLOW格下げ",
+      "timestamp": "2026-05-07T07:13:17.108905+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:YELLOW (active:5 standby:9)",
+      "timestamp": "2026-05-07T07:13:17.108943+09:00"
     }
   ],
   "stage_metadata": {
@@ -1411,7 +1491,11 @@
       "completed_at": "2026-05-07T06:20:45.977014+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-05-07T06:20:45.977021+09:00"
+      "started_at": "2026-05-07T06:20:45.977021+09:00",
+      "completed_at": "2026-05-07T07:13:17.108879+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-05-07T07:13:17.108886+09:00"
     }
   }
 }
