@@ -2,7 +2,7 @@
   "date": "2026-05-07",
   "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-06T18:36:19.337541+09:00",
-  "updated_at": "2026-05-07T07:13:17.108968+09:00",
+  "updated_at": "2026-05-07T07:31:59.266775+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
@@ -1475,6 +1475,16 @@
       "stage": "stage4",
       "action": "地合い確定: GREEN→effective:YELLOW (active:5 standby:9)",
       "timestamp": "2026-05-07T07:13:17.108943+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブRED → YELLOW格下げ",
+      "timestamp": "2026-05-07T07:31:59.266718+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:YELLOW (active:5 standby:9)",
+      "timestamp": "2026-05-07T07:31:59.266746+09:00"
     }
   ],
   "stage_metadata": {
