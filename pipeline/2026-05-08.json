@@ -1,13 +1,13 @@
 {
   "date": "2026-05-08",
-  "pipeline_stage": "stage2_narrative",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-05-07T18:40:04.211793+09:00",
-  "updated_at": "2026-05-07T22:03:58.708984+09:00",
+  "updated_at": "2026-05-08T06:13:43.233465+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "NEUTRAL",
+    "direction_confidence": "低",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "5.58%",
     "topix_change": null,
-    "dow_change": "1.24%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
-    "vix": "17.5",
-    "usdjpy": "1.32円",
+    "dow_change": "49,597ドル（-0.63%）",
+    "nasdaq_change": "25,806（-0.13%）",
+    "futures_gap_pct": 0.0160926939169617,
+    "vix": "17.1",
+    "usdjpy": "156.84円（-0.84円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -951,6 +951,11 @@
       "stage": "stage2",
       "action": "ナラティブ照合完了: RED リスク3件 触媒3件 (active:9 standby:1)",
       "timestamp": "2026-05-07T22:03:58.708959+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: NEUTRAL（低）先物+0.0% (active:9 standby:1)",
+      "timestamp": "2026-05-08T06:13:43.233438+09:00"
     }
   ],
   "stage_metadata": {
@@ -963,7 +968,11 @@
       "completed_at": "2026-05-07T22:03:58.708861+09:00"
     },
     "stage2_narrative": {
-      "started_at": "2026-05-07T22:03:58.708866+09:00"
+      "started_at": "2026-05-07T22:03:58.708866+09:00",
+      "completed_at": "2026-05-08T06:13:43.233404+09:00"
+    },
+    "stage3_7am": {
+      "started_at": "2026-05-08T06:13:43.233409+09:00"
     }
   }
 }
