@@ -1,11 +1,11 @@
 {
   "date": "2026-05-08",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-07T18:40:04.211793+09:00",
-  "updated_at": "2026-05-07T18:41:13.743978+09:00",
+  "updated_at": "2026-05-07T22:03:58.708984+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "RED",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,78 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "ホルムズ海峡封鎖長期化で原油高継続、円安圧力と日銀利上げ慎重化",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "エネルギー",
+          "海運",
+          "化学",
+          "電力"
+        ],
+        "detail": "<cite index=\"2-1,2-5,8-3,8-4\">米イスラエル・イラン戦争で海峡封鎖継続、原油価格上昇で燃料コスト急増</cite>"
+      },
+      {
+        "topic": "トランプ関税政策",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "自動車",
+          "電機",
+          "商社"
+        ],
+        "detail": "<cite index=\"11-1,12-1,15-5\">相互関税34%で米中貿易戦争激化、米GDP2%相当の経済負担</cite>"
+      },
+      {
+        "topic": "円安・インフレ圧力",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "内需",
+          "小売",
+          "食品"
+        ],
+        "detail": "<cite index=\"8-1,8-2,35-1\">中東情勢とドル高で円安継続、輸入インフレが消費者負担増</cite>"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "米中停戦合意期待",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "ハイテク",
+          "半導体",
+          "商社"
+        ],
+        "detail": "<cite index=\"46-1,46-3\">米国とイランの和平合意期待で原油下落、AI関連株に資金流入</cite>"
+      },
+      {
+        "topic": "日銀利上げ慎重姿勢",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "不動産",
+          "銀行",
+          "建設"
+        ],
+        "detail": "<cite index=\"32-1,34-2\">中東情勢影響で利上げ見送り、3委員反対も緩和環境継続</cite>"
+      },
+      {
+        "topic": "中国景気底入れ期待",
+        "direction": "positive",
+        "timeframe": "medium_term",
+        "sectors": [
+          "機械",
+          "素材",
+          "商社"
+        ],
+        "detail": "<cite index=\"22-1,22-4\">1-3月GDP5.0%でまずまずスタート、ハイテク輸出が底支え</cite>"
+      }
+    ]
   },
   "candidates": [
     {
@@ -488,7 +557,8 @@
       "flags": [
         "📊ROE優秀",
         "📈増益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️円安・インフレ圧力"
       ],
       "history": [
         {
@@ -510,6 +580,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️円安・インフレ圧力"
         }
       ],
       "fundamental": {
@@ -651,7 +726,8 @@
         "⚠️ROE低迷",
         "⚠️財務リスク",
         "⚠️決算接近（推定7日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "📈日銀利上げ慎重姿勢"
       ],
       "history": [
         {
@@ -678,6 +754,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈日銀利上げ慎重姿勢"
         }
       ],
       "fundamental": {
@@ -793,13 +874,14 @@
       "stop_loss_base": 3257,
       "target_base": 3420,
       "lot_base": 1264,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
         "⚠️低収益",
         "⚠️決算接近（推定7日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️ホルムズ海峡封鎖"
       ],
       "history": [
         {
@@ -826,6 +908,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖"
+        },
+        {
+          "stage": "stage2",
+          "action": "active → standby",
+          "reason": "高リスク: ホルムズ海峡封鎖 → 化学セクター逆風"
         }
       ],
       "fundamental": {
@@ -854,6 +946,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 10/10銘柄 決算接近警告7 APIリクエスト40",
       "timestamp": "2026-05-07T18:41:13.743884+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: RED リスク3件 触媒3件 (active:9 standby:1)",
+      "timestamp": "2026-05-07T22:03:58.708959+09:00"
     }
   ],
   "stage_metadata": {
@@ -862,7 +959,11 @@
       "completed_at": "2026-05-07T18:40:05.028432+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-07T18:40:05.028437+09:00"
+      "started_at": "2026-05-07T18:40:05.028437+09:00",
+      "completed_at": "2026-05-07T22:03:58.708861+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-07T22:03:58.708866+09:00"
     }
   }
 }
