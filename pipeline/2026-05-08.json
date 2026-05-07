@@ -1,15 +1,15 @@
 {
   "date": "2026-05-08",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-07T18:40:04.211793+09:00",
-  "updated_at": "2026-05-08T06:13:43.233465+09:00",
+  "updated_at": "2026-05-08T07:34:39.922983+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "YELLOW",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 0.0160926939169617,
     "vix": "17.1",
     "usdjpy": "156.84円（-0.84円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "鉄鋼・非鉄",
+        "change": 9.64
+      },
+      {
+        "name": "電機・精密",
+        "change": 5.09
+      },
+      {
+        "name": "建設・資材",
+        "change": 4.53
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "エネルギー資源",
+        "change": -3.21
+      },
+      {
+        "name": "商社・卸売",
+        "change": 0.39
+      },
+      {
+        "name": "自動車・輸送機",
+        "change": 0.48
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡封鎖長期化で原油高継続、円安圧力と日銀利上げ慎重化",
@@ -227,7 +253,8 @@
       "flags": [
         "⚠️ROE低迷",
         "📉減益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -249,6 +276,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -303,7 +335,8 @@
         "📊高収益",
         "📈増益",
         "⚠️決算接近（推定7日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -335,6 +368,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -392,7 +430,8 @@
         "📈高成長",
         "📈増益",
         "⚠️決算接近（推定7日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -429,6 +468,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -483,7 +527,8 @@
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定7日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -505,6 +550,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -552,7 +602,7 @@
       "stop_loss_base": 9399,
       "target_base": 9869,
       "lot_base": 438,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
@@ -585,6 +635,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "⚠️円安・インフレ圧力"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -632,7 +687,7 @@
       "stop_loss_base": 4540,
       "target_base": 4766,
       "lot_base": 907,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
@@ -671,6 +726,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -720,7 +780,7 @@
       "stop_loss_base": 2763,
       "target_base": 2901,
       "lot_base": 1490,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
@@ -759,6 +819,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "📈日銀利上げ慎重姿勢"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
         }
       ],
       "fundamental": {
@@ -806,11 +871,12 @@
       "stop_loss_base": 5625,
       "target_base": 5906,
       "lot_base": 732,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -827,6 +893,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "active → standby",
+          "reason": "YELLOW → 補欠候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -956,6 +1032,21 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+0.0% (active:9 standby:1)",
       "timestamp": "2026-05-08T06:13:43.233438+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブRED → YELLOW格下げ",
+      "timestamp": "2026-05-08T07:34:39.916509+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:YELLOW (active:5 standby:5)",
+      "timestamp": "2026-05-08T07:34:39.916542+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=neutral score=0.56",
+      "timestamp": "2026-05-08T07:34:39.922955+09:00"
     }
   ],
   "stage_metadata": {
@@ -972,7 +1063,22 @@
       "completed_at": "2026-05-08T06:13:43.233404+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-05-08T06:13:43.233409+09:00"
+      "started_at": "2026-05-08T06:13:43.233409+09:00",
+      "completed_at": "2026-05-08T07:34:39.916485+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-05-08T07:34:39.916491+09:00"
     }
+  },
+  "g1_adopted_metadata": {
+    "adopted_source": "g1_final_base",
+    "fallback_used": false,
+    "fallback_reason": null,
+    "valid": true,
+    "g1_score": 0.56,
+    "direction": "neutral",
+    "momentum": "weak",
+    "representative_set_id": "set_neutral_default",
+    "generated_at": "2026-05-08T07:34:39.920929+09:00"
   }
 }
