@@ -1,8 +1,8 @@
 {
   "date": "2026-05-08",
-  "pipeline_stage": "stage4_morning",
+  "pipeline_stage": "stage5_final",
   "created_at": "2026-05-07T18:40:04.211793+09:00",
-  "updated_at": "2026-05-08T07:34:39.922983+09:00",
+  "updated_at": "2026-05-08T08:56:19.958461+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "RED",
@@ -10,8 +10,8 @@
     "direction_confidence": "低",
     "morning_jiai": "GREEN",
     "effective_jiai": "YELLOW",
-    "futures_direction": null,
-    "final_judgment": null
+    "futures_direction": "FLAT",
+    "final_judgment": "⚪ 5分足3本まで様子見"
   },
   "market": {
     "nikkei_change": "5.58%",
@@ -1047,6 +1047,11 @@
       "stage": "stage4",
       "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=neutral score=0.56",
       "timestamp": "2026-05-08T07:34:39.922955+09:00"
+    },
+    {
+      "stage": "stage5",
+      "action": "最終確認: ⚪ 5分足3本まで様子見 先物+0.1% (active:5 standby:5)",
+      "timestamp": "2026-05-08T08:56:11.954873+09:00"
     }
   ],
   "stage_metadata": {
@@ -1067,7 +1072,11 @@
       "completed_at": "2026-05-08T07:34:39.916485+09:00"
     },
     "stage4_morning": {
-      "started_at": "2026-05-08T07:34:39.916491+09:00"
+      "started_at": "2026-05-08T07:34:39.916491+09:00",
+      "completed_at": "2026-05-08T08:56:11.219127+09:00"
+    },
+    "stage5_final": {
+      "started_at": "2026-05-08T08:56:11.219127+09:00"
     }
   },
   "g1_adopted_metadata": {
@@ -1080,5 +1089,18 @@
     "momentum": "weak",
     "representative_set_id": "set_neutral_default",
     "generated_at": "2026-05-08T07:34:39.920929+09:00"
+  },
+  "g1_context_summary": {
+    "applied": 5,
+    "total": 5,
+    "adopted_source": "g1_final_base"
+  },
+  "stage5_adjustment_metadata": {
+    "market_mode": "strong_down",
+    "adjustment_level": 1,
+    "adjustment_level_label": "minor",
+    "risk_flags": [],
+    "data_quality": "full",
+    "generated_at": "2026-05-08T08:56:19.957462+09:00"
   }
 }
