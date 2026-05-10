@@ -1,15 +1,15 @@
 {
   "date": "2026-05-11",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-08T17:37:51.621873+09:00",
-  "updated_at": "2026-05-11T06:01:57.359807+09:00",
+  "updated_at": "2026-05-11T07:09:17.061179+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "GREEN",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 2.3130672235161835,
     "vix": "17.2",
     "usdjpy": "156.57円（-0.26円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "電機・精密",
+        "change": 1.18
+      },
+      {
+        "name": "鉄鋼・非鉄",
+        "change": 1.07
+      },
+      {
+        "name": "機械",
+        "change": 0.49
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "銀行",
+        "change": -2.14
+      },
+      {
+        "name": "医薬品",
+        "change": -1.91
+      },
+      {
+        "name": "情報通信・サービス",
+        "change": -1.61
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡再封鎖と米イラン交渉停滞が市場不透明感高める",
@@ -234,7 +260,8 @@
         "📉減益",
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -271,6 +298,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -337,7 +369,8 @@
         "📉減益",
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -374,6 +407,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -437,7 +475,8 @@
         "⚠️ROE低迷",
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -464,6 +503,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -526,7 +570,8 @@
         "⚠️ROE低迷",
         "📉減益",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -553,6 +598,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -614,7 +664,8 @@
       "flags": [
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -636,6 +687,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -701,7 +757,8 @@
         "📈増益",
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -733,6 +790,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -797,7 +859,8 @@
         "📊財務良好",
         "⚠️決算接近（推定6日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️追いかけ注意"
+        "⚠️追いかけ注意",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -824,6 +887,11 @@
           "stage": "stage3",
           "action": "flagged",
           "reason": "⚠️追いかけ注意"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1077,7 +1145,8 @@
         "📊高収益",
         "📈高成長",
         "📈増益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -1114,6 +1183,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1161,6 +1235,21 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+2.3% (active:10 standby:1)",
       "timestamp": "2026-05-11T06:01:57.359779+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブYELLOW → GREEN維持（警戒付き）",
+      "timestamp": "2026-05-11T07:09:17.051314+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:GREEN (active:10 standby:1)",
+      "timestamp": "2026-05-11T07:09:17.051359+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=legacy_stage4 valid=False direction=None score=None",
+      "timestamp": "2026-05-11T07:09:17.061150+09:00"
     }
   ],
   "stage_metadata": {
@@ -1177,7 +1266,22 @@
       "completed_at": "2026-05-11T06:01:57.359695+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-05-11T06:01:57.359701+09:00"
+      "started_at": "2026-05-11T06:01:57.359701+09:00",
+      "completed_at": "2026-05-11T07:09:17.051278+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-05-11T07:09:17.051286+09:00"
     }
+  },
+  "g1_adopted_metadata": {
+    "adopted_source": "legacy_stage4",
+    "fallback_used": true,
+    "fallback_reason": "g1_generated_too_old",
+    "valid": false,
+    "g1_score": null,
+    "direction": null,
+    "momentum": null,
+    "representative_set_id": null,
+    "generated_at": "2026-05-11T07:09:17.061007+09:00"
   }
 }
