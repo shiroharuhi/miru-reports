@@ -1,13 +1,13 @@
 {
   "date": "2026-05-11",
-  "pipeline_stage": "stage2_narrative",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-05-08T17:37:51.621873+09:00",
-  "updated_at": "2026-05-10T21:04:33.165156+09:00",
+  "updated_at": "2026-05-11T06:01:57.359807+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "NEUTRAL",
+    "direction_confidence": "低",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "-0.19%",
     "topix_change": null,
-    "dow_change": "-0.63%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
+    "dow_change": "49,609ドル（+0.02%）",
+    "nasdaq_change": "26,247（+1.71%）",
+    "futures_gap_pct": 2.3130672235161835,
     "vix": "17.2",
-    "usdjpy": "0.30円",
+    "usdjpy": "156.57円（-0.26円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -142,7 +142,8 @@
       "flags": [
         "📊ROE優秀",
         "📈増益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -164,6 +165,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -179,7 +185,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 10538,
+        "low": 10485,
+        "high": 10590
+      },
+      "stop_loss_current": 10337,
+      "target_current": 10854,
+      "lot_current": 398,
+      "gap_pct": 2.31
     },
     {
       "code": "6875",
@@ -218,7 +233,8 @@
         "📉減収",
         "📉減益",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -250,6 +266,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -267,7 +288,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 11970,
+        "low": 11910,
+        "high": 12029
+      },
+      "stop_loss_current": 11742,
+      "target_current": 12329,
+      "lot_current": 350,
+      "gap_pct": 2.31
     },
     {
       "code": "4565",
@@ -306,7 +336,8 @@
         "⚠️低収益",
         "📉減益",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -338,6 +369,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -354,7 +390,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 1193,
+        "low": 1187,
+        "high": 1198
+      },
+      "stop_loss_current": 1170,
+      "target_current": 1228,
+      "lot_current": 3520,
+      "gap_pct": 2.23
     },
     {
       "code": "5713",
@@ -391,7 +436,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -413,6 +459,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -428,7 +479,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 10860,
+        "low": 10805,
+        "high": 10914
+      },
+      "stop_loss_current": 10653,
+      "target_current": 11185,
+      "lot_current": 386,
+      "gap_pct": 2.31
     },
     {
       "code": "6965",
@@ -465,7 +525,8 @@
       "flags": [
         "⚠️ROE低迷",
         "📉減益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -487,6 +548,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -502,7 +568,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 2243,
+        "low": 2231,
+        "high": 2254
+      },
+      "stop_loss_current": 2200,
+      "target_current": 2310,
+      "lot_current": 1872,
+      "gap_pct": 2.28
     },
     {
       "code": "6326",
@@ -538,7 +613,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -555,6 +631,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -572,7 +653,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 2879,
+        "low": 2864,
+        "high": 2893
+      },
+      "stop_loss_current": 2824,
+      "target_current": 2965,
+      "lot_current": 1458,
+      "gap_pct": 2.31
     },
     {
       "code": "6638",
@@ -610,7 +700,8 @@
         "📊ROE優秀",
         "📈増益",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -637,6 +728,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -654,7 +750,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 1745,
+        "low": 1736,
+        "high": 1753
+      },
+      "stop_loss_current": 1711,
+      "target_current": 1797,
+      "lot_current": 2406,
+      "gap_pct": 2.29
     },
     {
       "code": "6305",
@@ -691,7 +796,8 @@
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -713,6 +819,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -730,7 +841,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 5810,
+        "low": 5780,
+        "high": 5839
+      },
+      "stop_loss_current": 5699,
+      "target_current": 5984,
+      "lot_current": 722,
+      "gap_pct": 2.31
     },
     {
       "code": "7911",
@@ -766,7 +886,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -783,6 +904,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -800,7 +926,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 5419,
+        "low": 5391,
+        "high": 5446
+      },
+      "stop_loss_current": 5316,
+      "target_current": 5581,
+      "lot_current": 775,
+      "gap_pct": 2.3
     },
     {
       "code": "4980",
@@ -839,7 +974,8 @@
         "📊高収益",
         "📈増益",
         "⚠️決算接近（推定6日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -871,6 +1007,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -888,7 +1029,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 2781,
+        "low": 2767,
+        "high": 2794
+      },
+      "stop_loss_current": 2728,
+      "target_current": 2864,
+      "lot_current": 1510,
+      "gap_pct": 2.28
     },
     {
       "code": "6323",
@@ -979,7 +1129,16 @@
         "sell_balance": 0,
         "margin_date": "2026-05-01",
         "buy_change_4w": -100.0
-      }
+      },
+      "entry_current": {
+        "est_open": 3988,
+        "low": 3968,
+        "high": 4007
+      },
+      "stop_loss_current": 3912,
+      "target_current": 4107,
+      "lot_current": 1053,
+      "gap_pct": 2.31
     }
   ],
   "history": [
@@ -997,6 +1156,11 @@
       "stage": "stage2",
       "action": "ナラティブ照合完了: YELLOW リスク4件 触媒3件 (active:10 standby:1)",
       "timestamp": "2026-05-10T21:04:33.165139+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: NEUTRAL（低）先物+2.3% (active:10 standby:1)",
+      "timestamp": "2026-05-11T06:01:57.359779+09:00"
     }
   ],
   "stage_metadata": {
@@ -1009,7 +1173,11 @@
       "completed_at": "2026-05-10T21:04:33.165083+09:00"
     },
     "stage2_narrative": {
-      "started_at": "2026-05-10T21:04:33.165087+09:00"
+      "started_at": "2026-05-10T21:04:33.165087+09:00",
+      "completed_at": "2026-05-11T06:01:57.359695+09:00"
+    },
+    "stage3_7am": {
+      "started_at": "2026-05-11T06:01:57.359701+09:00"
     }
   }
 }
