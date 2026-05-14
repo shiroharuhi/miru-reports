@@ -1,15 +1,15 @@
 {
   "date": "2026-05-15",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-14T18:43:19.755745+09:00",
-  "updated_at": "2026-05-15T06:20:58.520230+09:00",
+  "updated_at": "2026-05-15T07:36:19.361046+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "GREEN",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": -0.5989911727616646,
     "vix": "17.3",
     "usdjpy": "158.30円（+0.63円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "素材・化学",
+        "change": 1.51
+      },
+      {
+        "name": "自動車・輸送機",
+        "change": 1.32
+      },
+      {
+        "name": "食品",
+        "change": 0.77
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -7.93
+      },
+      {
+        "name": "不動産",
+        "change": -4.66
+      },
+      {
+        "name": "機械",
+        "change": -2.93
+      }
+    ]
   },
   "narrative": {
     "headline": "ホルムズ海峡一時停戦とフジクラショック",
@@ -339,7 +365,8 @@
         "📉減益",
         "⚠️決算接近（推定0日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️ホルムズ海峡封鎖継続"
+        "⚠️ホルムズ海峡封鎖継続",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -371,6 +398,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "⚠️ホルムズ海峡封鎖継続"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -434,7 +466,8 @@
       "flags": [
         "📊財務良好",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -456,6 +489,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -696,7 +734,8 @@
         "📈増益",
         "⚠️決算接近（推定0日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️ホルムズ海峡封鎖継続"
+        "⚠️ホルムズ海峡封鎖継続",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -723,6 +762,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "⚠️ホルムズ海峡封鎖継続"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -787,7 +831,8 @@
         "⚠️ROE低迷",
         "⚠️決算接近（推定0日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️ホルムズ海峡封鎖継続"
+        "⚠️ホルムズ海峡封鎖継続",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -814,6 +859,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "⚠️ホルムズ海峡封鎖継続"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -878,7 +928,8 @@
         "📊財務良好",
         "📈増益",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -905,6 +956,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -971,7 +1027,8 @@
         "📈増益",
         "⚠️決算接近（推定0日後・2026-05-15）",
         "📉買残整理4w-100.0%",
-        "⚠️ホルムズ海峡封鎖継続"
+        "⚠️ホルムズ海峡封鎖継続",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -1008,6 +1065,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "⚠️ホルムズ海峡封鎖継続"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1316,7 +1378,8 @@
       "flags": [
         "📉減益",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -1343,6 +1406,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1392,6 +1460,21 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物-0.6% (active:10 standby:4)",
       "timestamp": "2026-05-15T06:20:58.520203+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブYELLOW → GREEN維持（警戒付き）",
+      "timestamp": "2026-05-15T07:36:19.353965+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:GREEN (active:10 standby:4)",
+      "timestamp": "2026-05-15T07:36:19.353998+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=neutral score=0.5",
+      "timestamp": "2026-05-15T07:36:19.361018+09:00"
     }
   ],
   "stage_metadata": {
@@ -1408,7 +1491,22 @@
       "completed_at": "2026-05-15T06:20:58.520135+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-05-15T06:20:58.520141+09:00"
+      "started_at": "2026-05-15T06:20:58.520141+09:00",
+      "completed_at": "2026-05-15T07:36:19.353941+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-05-15T07:36:19.353947+09:00"
     }
+  },
+  "g1_adopted_metadata": {
+    "adopted_source": "g1_final_base",
+    "fallback_used": false,
+    "fallback_reason": null,
+    "valid": true,
+    "g1_score": 0.5,
+    "direction": "neutral",
+    "momentum": "weak",
+    "representative_set_id": "set_neutral_default",
+    "generated_at": "2026-05-15T07:36:19.359045+09:00"
   }
 }
