@@ -1,11 +1,11 @@
 {
   "date": "2026-05-15",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-14T18:43:19.755745+09:00",
-  "updated_at": "2026-05-14T18:44:55.229108+09:00",
+  "updated_at": "2026-05-14T22:05:36.111723+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "YELLOW",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,89 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "ホルムズ海峡一時停戦とフジクラショック",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖継続",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "海運",
+          "石油",
+          "ガス",
+          "化学"
+        ],
+        "detail": "米イラン停戦は脆弱で一時的、海峡封鎖継続でエネルギー価格不安定"
+      },
+      {
+        "topic": "FRB利下げ停止長期化",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "成長株"
+        ],
+        "detail": "パウエル議長、トランプ関税によるインフレ懸念で利下げに慎重姿勢"
+      },
+      {
+        "topic": "米中貿易戦争再燃リスク",
+        "severity": "medium",
+        "timeframe": "medium_term",
+        "sectors": [
+          "半導体",
+          "製造業",
+          "商社"
+        ],
+        "detail": "トランプ氏が中国に100%追加関税示唆、レアアース規制への対抗"
+      },
+      {
+        "topic": "AI関連株決算失望",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "AI関連",
+          "半導体",
+          "電子部品"
+        ],
+        "detail": "フジクラ減益見通しでAI関連株急落、材料調達懸念が表面化"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "米イラン協議継続",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "総合商社",
+          "海運",
+          "エネルギー"
+        ],
+        "detail": "停戦協議継続で原油価格安定化期待、ホルムズ正常化への道筋"
+      },
+      {
+        "topic": "中東向け代替ルート開発",
+        "direction": "positive",
+        "timeframe": "medium_term",
+        "sectors": [
+          "海運",
+          "物流",
+          "インフラ"
+        ],
+        "detail": "日本郵船など代替輸送ルート開拓、リスク分散進展"
+      },
+      {
+        "topic": "日銀追加利上げ見送り",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "銀行",
+          "不動産",
+          "内需株"
+        ],
+        "detail": "植田総裁、中東リスクでデータ見極め慎重姿勢、緩和継続期待"
+      }
+    ]
   },
   "candidates": [
     {
@@ -240,7 +320,8 @@
         "⚠️ROE低迷",
         "📉減益",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️ホルムズ海峡封鎖継続"
       ],
       "history": [
         {
@@ -267,6 +348,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖継続"
         }
       ],
       "fundamental": {
@@ -555,7 +641,8 @@
       "flags": [
         "📈増益",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️ホルムズ海峡封鎖継続"
       ],
       "history": [
         {
@@ -577,6 +664,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖継続"
         }
       ],
       "fundamental": {
@@ -631,7 +723,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️ホルムズ海峡封鎖継続"
       ],
       "history": [
         {
@@ -653,6 +746,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖継続"
         }
       ],
       "fundamental": {
@@ -791,7 +889,8 @@
         "📉減収",
         "📈増益",
         "⚠️決算接近（推定0日後・2026-05-15）",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️ホルムズ海峡封鎖継続"
       ],
       "history": [
         {
@@ -823,6 +922,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️ホルムズ海峡封鎖継続"
         }
       ],
       "fundamental": {
@@ -1152,6 +1256,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 13/14銘柄 決算接近警告13 APIリクエスト55",
       "timestamp": "2026-05-14T18:44:55.228979+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク4件 触媒3件 (active:10 standby:4)",
+      "timestamp": "2026-05-14T22:05:36.111697+09:00"
     }
   ],
   "stage_metadata": {
@@ -1160,7 +1269,11 @@
       "completed_at": "2026-05-14T18:43:20.385468+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-14T18:43:20.385473+09:00"
+      "started_at": "2026-05-14T18:43:20.385473+09:00",
+      "completed_at": "2026-05-14T22:05:36.111599+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-14T22:05:36.111604+09:00"
     }
   }
 }
