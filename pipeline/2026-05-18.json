@@ -1,11 +1,11 @@
 {
   "date": "2026-05-18",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-15T18:59:32.615449+09:00",
-  "updated_at": "2026-05-15T19:01:57.144926+09:00",
+  "updated_at": "2026-05-17T21:06:49.446301+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
-    "narrative_status": null,
+    "narrative_status": "RED",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,109 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "ホルムズ海峡封鎖継続、利上げ圧力でトリプルリスク",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "エネルギー",
+          "石油化学",
+          "商社",
+          "海運"
+        ],
+        "detail": "中東原油供給途絶、国内石油元売り緊急体制継続"
+      },
+      {
+        "topic": "米国市場混乱",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "ハイテク",
+          "半導体",
+          "電機"
+        ],
+        "detail": "トランプ政策で株債券ドル「トリプル安」進行"
+      },
+      {
+        "topic": "日銀利上げ圧力",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "不動産",
+          "銀行",
+          "建設"
+        ],
+        "detail": "4月会合で3委員利上げ要求、次回決定への注視"
+      },
+      {
+        "topic": "米中貿易摩擦",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "ハイテク",
+          "機械"
+        ],
+        "detail": "レアアース規制と報復関税の応酬再燃の可能性"
+      },
+      {
+        "topic": "長期金利上昇",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "グロース",
+          "不動産",
+          "ハイテク"
+        ],
+        "detail": "2.7%突破で高PER銘柄に売り圧力"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "米NVIDIA決算",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "半導体",
+          "AI関連",
+          "ハイテク"
+        ],
+        "detail": "20日発表でAI相場の方向性を左右する注目材料"
+      },
+      {
+        "topic": "キオクシア決算",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "半導体",
+          "メモリー"
+        ],
+        "detail": "48倍増益でAI需要の恩恵を確認できる期待"
+      },
+      {
+        "topic": "原油価格安定",
+        "direction": "positive",
+        "timeframe": "short_term",
+        "sectors": [
+          "石油化学",
+          "電力",
+          "運輸"
+        ],
+        "detail": "前週小動きでエネルギーコスト上昇一服への期待"
+      },
+      {
+        "topic": "中国輸出回復",
+        "direction": "negative",
+        "timeframe": "medium_term",
+        "sectors": [
+          "機械",
+          "電機"
+        ],
+        "detail": "中東向け輸出減少で中国経済K字回復の鈍化"
+      }
+    ]
   },
   "candidates": [
     {
@@ -1254,7 +1354,9 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️米中貿易摩擦",
+        "📉中国輸出回復"
       ],
       "history": [
         {
@@ -1271,6 +1373,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易摩擦"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉中国輸出回復"
         }
       ],
       "fundamental": {
@@ -1328,7 +1440,9 @@
         "📊高収益",
         "📈高成長",
         "📈増益",
-        "📉買残整理4w-100.0%"
+        "📉買残整理4w-100.0%",
+        "⚠️米中貿易摩擦",
+        "📉中国輸出回復"
       ],
       "history": [
         {
@@ -1360,6 +1474,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉買残整理4w-100.0%"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易摩擦"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉中国輸出回復"
         }
       ],
       "fundamental": {
@@ -1530,6 +1654,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 20/20銘柄 決算接近警告0 APIリクエスト80",
       "timestamp": "2026-05-15T19:01:57.144846+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: RED リスク5件 触媒4件 (active:20 standby:0)",
+      "timestamp": "2026-05-17T21:06:49.446273+09:00"
     }
   ],
   "stage_metadata": {
@@ -1538,7 +1667,11 @@
       "completed_at": "2026-05-15T18:59:33.398777+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-15T18:59:33.398783+09:00"
+      "started_at": "2026-05-15T18:59:33.398783+09:00",
+      "completed_at": "2026-05-17T21:06:49.446088+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-17T21:06:49.446097+09:00"
     }
   }
 }
