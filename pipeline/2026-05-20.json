@@ -1,11 +1,11 @@
 {
   "date": "2026-05-20",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-19T19:51:12.366800+09:00",
-  "updated_at": "2026-05-19T19:53:21.578636+09:00",
+  "updated_at": "2026-05-19T23:07:00.211400+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
-    "narrative_status": null,
+    "narrative_status": "RED",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,92 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "イラン海峡封鎖継続で原油高、FRB利下げ困難化",
+    "risks": [
+      {
+        "topic": "ホルムズ海峡封鎖継続",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "エネルギー",
+          "運輸",
+          "海運",
+          "商社"
+        ],
+        "detail": "原油LNG輸送ルート封鎖が長期化、エネルギー価格急騰継続"
+      },
+      {
+        "topic": "米国スタグフレーション懸念",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "輸出",
+          "自動車",
+          "電機",
+          "半導体"
+        ],
+        "detail": "トランプ関税とイラン情勢でインフレ加速、FRB利下げ困難"
+      },
+      {
+        "topic": "米中貿易戦争激化",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "電子部品",
+          "商社",
+          "機械"
+        ],
+        "detail": "半導体規制強化とレアアース報復、サプライチェーン混乱"
+      },
+      {
+        "topic": "日銀利上げ圧力継続",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "銀行",
+          "不動産",
+          "REIT",
+          "建設"
+        ],
+        "detail": "植田総裁が中東情勢下でも追加利上げ示唆、金利負担増"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "原油価格急騰",
+        "direction": "negative",
+        "timeframe": "immediate",
+        "sectors": [
+          "運輸",
+          "航空",
+          "化学",
+          "素材"
+        ],
+        "detail": "ホルムズ封鎖でエネルギーコスト急増、企業業績圧迫"
+      },
+      {
+        "topic": "FRB議長解任リスク",
+        "direction": "negative",
+        "timeframe": "short_term",
+        "sectors": [
+          "全セクター"
+        ],
+        "detail": "トランプ大統領がパウエル解任検討、金融市場大混乱懸念"
+      },
+      {
+        "topic": "円安進行継続",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "輸出",
+          "自動車",
+          "電機",
+          "精密機器"
+        ],
+        "detail": "中東リスクで安全資産需要、ドル高円安で輸出企業支援"
+      }
+    ]
   },
   "candidates": [
     {
@@ -63,7 +146,8 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️ROE低迷"
+        "⚠️ROE低迷",
+        "📉原油価格急騰"
       ],
       "history": [
         {
@@ -75,6 +159,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️ROE低迷"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉原油価格急騰"
         }
       ],
       "fundamental": {
@@ -120,7 +209,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "⚠️財務リスク"
+        "⚠️財務リスク",
+        "⚠️日銀利上げ圧力継続"
       ],
       "history": [
         {
@@ -137,6 +227,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️財務リスク"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️日銀利上げ圧力継続"
         }
       ],
       "fundamental": {
@@ -701,7 +796,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️低収益",
-        "📉減益"
+        "📉減益",
+        "⚠️米中貿易戦争激化"
       ],
       "history": [
         {
@@ -723,6 +819,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉減益"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争激化"
         }
       ],
       "fundamental": {
@@ -882,7 +983,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "⚠️ROE低迷",
-        "📉減益"
+        "📉減益",
+        "📉原油価格急騰"
       ],
       "history": [
         {
@@ -899,6 +1001,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉減益"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉原油価格急騰"
         }
       ],
       "fundamental": {
@@ -1275,6 +1382,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 20/20銘柄 決算接近警告0 APIリクエスト80",
       "timestamp": "2026-05-19T19:53:21.578514+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: RED リスク4件 触媒3件 (active:20 standby:0)",
+      "timestamp": "2026-05-19T23:07:00.211374+09:00"
     }
   ],
   "stage_metadata": {
@@ -1283,7 +1395,11 @@
       "completed_at": "2026-05-19T19:51:13.132824+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-19T19:51:13.132829+09:00"
+      "started_at": "2026-05-19T19:51:13.132829+09:00",
+      "completed_at": "2026-05-19T23:07:00.211252+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-19T23:07:00.211257+09:00"
     }
   }
 }
