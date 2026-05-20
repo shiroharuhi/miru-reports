@@ -1,11 +1,11 @@
 {
   "date": "2026-05-21",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-20T19:28:05.710904+09:00",
-  "updated_at": "2026-05-20T19:30:09.619717+09:00",
+  "updated_at": "2026-05-20T22:47:07.182313+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "YELLOW",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,86 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "中東・米中貿易戦争深刻化に日銀利上げ圧力",
+    "risks": [
+      {
+        "topic": "中東情勢",
+        "severity": "high",
+        "timeframe": "immediate",
+        "sectors": [
+          "石油・ガス",
+          "海運",
+          "電力"
+        ],
+        "detail": "ホルムズ海峡封鎖継続で原油価格高止まり、エネルギー関連インフレ加速リスク"
+      },
+      {
+        "topic": "米中貿易戦争",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "機械",
+          "商社"
+        ],
+        "detail": "関税54%まで上昇で対中ビジネス企業の収益圧迫、サプライチェーン混乱"
+      },
+      {
+        "topic": "日銀利上げ",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "公益"
+        ],
+        "detail": "物価上振れ懸念から政策委員3人が利上げ要求、金利敏感銘柄への影響"
+      },
+      {
+        "topic": "長期金利上昇",
+        "severity": "medium",
+        "timeframe": "immediate",
+        "sectors": [
+          "銀行",
+          "保険",
+          "電線"
+        ],
+        "detail": "2.8%まで上昇し29年半ぶり高水準、グロース株の評価見直し圧力"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "中国経済",
+        "direction": "negative",
+        "timeframe": "short_term",
+        "sectors": [
+          "資源",
+          "商社",
+          "工作機械"
+        ],
+        "detail": "成長率4%割れ懸念で中国関連ビジネス企業の業績下振れリスク"
+      },
+      {
+        "topic": "半導体調整",
+        "direction": "negative",
+        "timeframe": "immediate",
+        "sectors": [
+          "半導体",
+          "電子部品",
+          "IT"
+        ],
+        "detail": "米フィラデルフィア半導体指数2%安で国内関連株に売り圧力継続"
+      },
+      {
+        "topic": "銀行株見直し",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "銀行"
+        ],
+        "detail": "金利上昇環境で利ざや改善期待、相対的な出遅れ感からの物色"
+      }
+    ]
   },
   "candidates": [
     {
@@ -248,7 +325,9 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️財務リスク"
+        "⚠️財務リスク",
+        "⚠️長期金利上昇",
+        "📈銀行株見直し"
       ],
       "history": [
         {
@@ -260,6 +339,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️財務リスク"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️長期金利上昇"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈銀行株見直し"
         }
       ],
       "fundamental": {
@@ -603,7 +692,9 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️財務リスク"
+        "⚠️財務リスク",
+        "⚠️長期金利上昇",
+        "📈銀行株見直し"
       ],
       "history": [
         {
@@ -615,6 +706,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️財務リスク"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️長期金利上昇"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📈銀行株見直し"
         }
       ],
       "fundamental": {
@@ -726,7 +827,9 @@
       "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️ROE低迷"
+        "⚠️ROE低迷",
+        "⚠️米中貿易戦争",
+        "📉中国経済"
       ],
       "history": [
         {
@@ -743,6 +846,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️ROE低迷"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉中国経済"
         }
       ],
       "fundamental": {
@@ -789,7 +902,9 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️低収益",
-        "📉減益"
+        "📉減益",
+        "⚠️米中貿易戦争",
+        "📉中国経済"
       ],
       "history": [
         {
@@ -816,6 +931,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉減益"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉中国経済"
         }
       ],
       "fundamental": {
@@ -932,7 +1057,9 @@
         "📊ROE優秀",
         "📊高収益",
         "📈高成長",
-        "📈増益"
+        "📈増益",
+        "⚠️米中貿易戦争",
+        "📉中国経済"
       ],
       "history": [
         {
@@ -964,6 +1091,16 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📈増益"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️米中貿易戦争"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉中国経済"
         }
       ],
       "fundamental": {
@@ -1270,6 +1407,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 19/19銘柄 決算接近警告0 APIリクエスト76",
       "timestamp": "2026-05-20T19:30:09.619630+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク4件 触媒3件 (active:10 standby:9)",
+      "timestamp": "2026-05-20T22:47:07.182289+09:00"
     }
   ],
   "stage_metadata": {
@@ -1278,7 +1420,11 @@
       "completed_at": "2026-05-20T19:28:06.265611+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-20T19:28:06.265616+09:00"
+      "started_at": "2026-05-20T19:28:06.265616+09:00",
+      "completed_at": "2026-05-20T22:47:07.182156+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-20T22:47:07.182162+09:00"
     }
   }
 }
