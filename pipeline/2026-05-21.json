@@ -1,15 +1,15 @@
 {
   "date": "2026-05-21",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-05-20T19:28:05.710904+09:00",
-  "updated_at": "2026-05-21T07:03:34.726884+09:00",
+  "updated_at": "2026-05-21T07:51:39.388089+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
     "direction_7am": "NEUTRAL",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "GREEN",
+    "effective_jiai": "GREEN",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 0.9557551289445498,
     "vix": "17.4",
     "usdjpy": "158.84円（-0.02円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "小売",
+        "change": 0.05
+      },
+      {
+        "name": "機械",
+        "change": -0.03
+      },
+      {
+        "name": "金融（除く銀行）",
+        "change": -0.61
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -3.17
+      },
+      {
+        "name": "建設・資材",
+        "change": -2.55
+      },
+      {
+        "name": "電力・ガス",
+        "change": -2.35
+      }
+    ]
   },
   "narrative": {
     "headline": "中東・米中貿易戦争深刻化に日銀利上げ圧力",
@@ -143,7 +169,8 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️ROE低迷"
+        "⚠️ROE低迷",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -155,6 +182,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️ROE低迷"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -429,7 +461,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
-        "📈増益"
+        "📈増益",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -446,6 +479,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📈増益"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -928,7 +966,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️米中貿易戦争",
-        "📉中国経済"
+        "📉中国経済",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -955,6 +994,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "📉中国経済"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1012,7 +1056,8 @@
         "⚠️低収益",
         "📉減益",
         "⚠️米中貿易戦争",
-        "📉中国経済"
+        "📉中国経済",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -1049,6 +1094,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "📉中国経済"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1185,7 +1235,8 @@
         "📈高成長",
         "📈増益",
         "⚠️米中貿易戦争",
-        "📉中国経済"
+        "📉中国経済",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -1227,6 +1278,11 @@
           "stage": "stage2",
           "action": "flagged",
           "reason": "📉中国経済"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -1588,6 +1644,21 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+1.0% (active:10 standby:9)",
       "timestamp": "2026-05-21T07:03:34.726854+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "数値GREEN + ナラティブYELLOW → GREEN維持（警戒付き）",
+      "timestamp": "2026-05-21T07:51:39.381331+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:GREEN (active:10 standby:9)",
+      "timestamp": "2026-05-21T07:51:39.381363+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=neutral score=0.5",
+      "timestamp": "2026-05-21T07:51:39.388054+09:00"
     }
   ],
   "stage_metadata": {
@@ -1604,7 +1675,22 @@
       "completed_at": "2026-05-21T07:03:34.726773+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-05-21T07:03:34.726781+09:00"
+      "started_at": "2026-05-21T07:03:34.726781+09:00",
+      "completed_at": "2026-05-21T07:51:39.381302+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-05-21T07:51:39.381310+09:00"
     }
+  },
+  "g1_adopted_metadata": {
+    "adopted_source": "g1_final_base",
+    "fallback_used": false,
+    "fallback_reason": null,
+    "valid": true,
+    "g1_score": 0.5,
+    "direction": "neutral",
+    "momentum": "weak",
+    "representative_set_id": "set_neutral_default",
+    "generated_at": "2026-05-21T07:51:39.385909+09:00"
   }
 }
