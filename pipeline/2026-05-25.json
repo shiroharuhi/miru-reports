@@ -1,11 +1,11 @@
 {
   "date": "2026-05-25",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-05-22T19:24:41.127827+09:00",
-  "updated_at": "2026-05-22T19:25:57.093290+09:00",
+  "updated_at": "2026-05-24T21:12:41.970836+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "YELLOW",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,9 +25,73 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
-    "risks": [],
-    "catalysts": []
+    "headline": "米イラン和平合意への期待とFRB政策の不確実性",
+    "risks": [
+      {
+        "topic": "FRBとトランプ政権の対立",
+        "severity": "high",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産"
+        ],
+        "detail": "トランプ大統領がFRB議長を批判、パウエル議長の利下げ抵抗が株価下押し要因"
+      },
+      {
+        "topic": "ホルムズ海峡封鎖の長期化",
+        "severity": "medium",
+        "timeframe": "medium_term",
+        "sectors": [
+          "エネルギー",
+          "商社",
+          "海運"
+        ],
+        "detail": "原油在庫が需要100日分割れ目前、世界的な供給制約継続"
+      },
+      {
+        "topic": "米中半導体規制強化",
+        "severity": "medium",
+        "timeframe": "short_term",
+        "sectors": [
+          "半導体",
+          "電子部品"
+        ],
+        "detail": "MATCH法案により日欧企業への圧力強化、サプライチェーン混乱"
+      }
+    ],
+    "catalysts": [
+      {
+        "topic": "米イラン和平協議進展",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "全業種"
+        ],
+        "detail": "パキスタン仲介で合意最終案完成報道、戦闘終結期待で株価上昇"
+      },
+      {
+        "topic": "日銀の利上げスタンス維持",
+        "direction": "negative",
+        "timeframe": "short_term",
+        "sectors": [
+          "金融",
+          "不動産",
+          "REITs"
+        ],
+        "detail": "植田総裁が6月利上げ示唆、ベッセント米財務長官も後押し発言"
+      },
+      {
+        "topic": "AI関連株の強さ継続",
+        "direction": "positive",
+        "timeframe": "immediate",
+        "sectors": [
+          "半導体",
+          "電子部品",
+          "AI関連"
+        ],
+        "detail": "SBG連日大幅高、エヌビディア決算通過でAI相場継続"
+      }
+    ]
   },
   "candidates": [
     {
@@ -145,12 +209,14 @@
       "stop_loss_base": 1942,
       "target_base": 2039,
       "lot_base": 2121,
-      "status": "active",
+      "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
         "📊ROE優秀",
         "📊高収益",
-        "⚠️財務リスク"
+        "⚠️財務リスク",
+        "⚠️FRBとトランプ政権の対立",
+        "📉日銀の利上げスタンス維持"
       ],
       "history": [
         {
@@ -172,6 +238,21 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️財務リスク"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "⚠️FRBとトランプ政権の対立"
+        },
+        {
+          "stage": "stage2",
+          "action": "active → standby",
+          "reason": "高リスク: FRBとトランプ政権の対立 → その他金融業セクター逆風"
+        },
+        {
+          "stage": "stage2",
+          "action": "flagged",
+          "reason": "📉日銀の利上げスタンス維持"
         }
       ],
       "fundamental": {
@@ -829,6 +910,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 11/11銘柄 決算接近警告0 APIリクエスト44",
       "timestamp": "2026-05-22T19:25:57.093208+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク3件 触媒3件 (active:9 standby:2)",
+      "timestamp": "2026-05-24T21:12:41.970813+09:00"
     }
   ],
   "stage_metadata": {
@@ -837,7 +923,11 @@
       "completed_at": "2026-05-22T19:24:41.905434+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-22T19:24:41.905439+09:00"
+      "started_at": "2026-05-22T19:24:41.905439+09:00",
+      "completed_at": "2026-05-24T21:12:41.970737+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-05-24T21:12:41.970743+09:00"
     }
   }
 }
