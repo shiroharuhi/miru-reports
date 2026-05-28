@@ -1,13 +1,13 @@
 {
   "date": "2026-05-29",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-05-28T20:05:10.624905+09:00",
-  "updated_at": "2026-05-28T20:07:14.954447+09:00",
+  "updated_at": "2026-05-29T07:03:22.385927+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
     "narrative_status": null,
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "NEUTRAL",
+    "direction_confidence": "低",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "-0.47%",
     "topix_change": null,
-    "dow_change": "0.36%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
-    "vix": "16.8",
-    "usdjpy": "0.17円",
+    "dow_change": "50,669ドル（+0.05%）",
+    "nasdaq_change": "26,917（+0.91%）",
+    "futures_gap_pct": 0.9277718141389357,
+    "vix": "15.7",
+    "usdjpy": "159.25円（+0.00円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -102,7 +102,16 @@
         "sell_balance": 325800,
         "margin_date": "2026-05-22",
         "buy_change_4w": -10.9
-      }
+      },
+      "entry_current": {
+        "est_open": 2849,
+        "low": 2834,
+        "high": 2863
+      },
+      "stop_loss_current": 2794,
+      "target_current": 2934,
+      "lot_current": 1474,
+      "gap_pct": 0.92
     },
     {
       "code": "6590",
@@ -182,7 +191,16 @@
         "sell_balance": 101400,
         "margin_date": "2026-05-22",
         "buy_change_4w": -42.8
-      }
+      },
+      "entry_current": {
+        "est_open": 5228,
+        "low": 5201,
+        "high": 5254
+      },
+      "stop_loss_current": 5128,
+      "target_current": 5384,
+      "lot_current": 803,
+      "gap_pct": 0.93
     },
     {
       "code": "6645",
@@ -242,7 +260,16 @@
         "sell_balance": 45400,
         "margin_date": "2026-05-22",
         "buy_change_4w": -16.6
-      }
+      },
+      "entry_current": {
+        "est_open": 5648,
+        "low": 5619,
+        "high": 5676
+      },
+      "stop_loss_current": 5540,
+      "target_current": 5817,
+      "lot_current": 743,
+      "gap_pct": 0.91
     },
     {
       "code": "7201",
@@ -321,7 +348,16 @@
         "sell_balance": 1862300,
         "margin_date": "2026-05-22",
         "buy_change_4w": -10.3
-      }
+      },
+      "entry_current": {
+        "est_open": 402,
+        "low": 399,
+        "high": 404
+      },
+      "stop_loss_current": 394,
+      "target_current": 414,
+      "lot_current": 10447,
+      "gap_pct": 0.75
     },
     {
       "code": "6326",
@@ -376,7 +412,16 @@
         "sell_balance": 176700,
         "margin_date": "2026-05-22",
         "buy_change_4w": -1.7
-      }
+      },
+      "entry_current": {
+        "est_open": 2836,
+        "low": 2821,
+        "high": 2850
+      },
+      "stop_loss_current": 2782,
+      "target_current": 2921,
+      "lot_current": 1480,
+      "gap_pct": 0.93
     },
     {
       "code": "4661",
@@ -444,7 +489,16 @@
         "sell_balance": 1834400,
         "margin_date": "2026-05-22",
         "buy_change_4w": -2.8
-      }
+      },
+      "entry_current": {
+        "est_open": 2270,
+        "low": 2258,
+        "high": 2281
+      },
+      "stop_loss_current": 2226,
+      "target_current": 2338,
+      "lot_current": 1850,
+      "gap_pct": 0.89
     },
     {
       "code": "7283",
@@ -512,7 +566,16 @@
         "sell_balance": 7200,
         "margin_date": "2026-05-22",
         "buy_change_4w": -10.6
-      }
+      },
+      "entry_current": {
+        "est_open": 1909,
+        "low": 1899,
+        "high": 1918
+      },
+      "stop_loss_current": 1872,
+      "target_current": 1966,
+      "lot_current": 2200,
+      "gap_pct": 0.9
     },
     {
       "code": "3088",
@@ -574,7 +637,16 @@
         "sell_balance": 55600,
         "margin_date": "2026-05-22",
         "buy_change_4w": 3.9
-      }
+      },
+      "entry_current": {
+        "est_open": 2282,
+        "low": 2270,
+        "high": 2293
+      },
+      "stop_loss_current": 2238,
+      "target_current": 2350,
+      "lot_current": 1840,
+      "gap_pct": 0.88
     },
     {
       "code": "5333",
@@ -642,7 +714,16 @@
         "sell_balance": 37200,
         "margin_date": "2026-05-22",
         "buy_change_4w": -21.5
-      }
+      },
+      "entry_current": {
+        "est_open": 6176,
+        "low": 6145,
+        "high": 6206
+      },
+      "stop_loss_current": 6058,
+      "target_current": 6361,
+      "lot_current": 680,
+      "gap_pct": 0.92
     },
     {
       "code": "8113",
@@ -710,7 +791,16 @@
         "sell_balance": 342600,
         "margin_date": "2026-05-22",
         "buy_change_4w": -2.6
-      }
+      },
+      "entry_current": {
+        "est_open": 961,
+        "low": 956,
+        "high": 965
+      },
+      "stop_loss_current": 942,
+      "target_current": 989,
+      "lot_current": 4370,
+      "gap_pct": 0.84
     },
     {
       "code": "6787",
@@ -784,7 +874,16 @@
         "sell_balance": 73300,
         "margin_date": "2026-05-22",
         "buy_change_4w": 52.1
-      }
+      },
+      "entry_current": {
+        "est_open": 37948,
+        "low": 37758,
+        "high": 38137
+      },
+      "stop_loss_current": 37226,
+      "target_current": 39086,
+      "lot_current": 110,
+      "gap_pct": 0.93
     },
     {
       "code": "4980",
@@ -864,7 +963,16 @@
         "sell_balance": 157400,
         "margin_date": "2026-05-22",
         "buy_change_4w": -0.8
-      }
+      },
+      "entry_current": {
+        "est_open": 4066,
+        "low": 4045,
+        "high": 4086
+      },
+      "stop_loss_current": 3988,
+      "target_current": 4187,
+      "lot_current": 1032,
+      "gap_pct": 0.92
     },
     {
       "code": "5074",
@@ -929,7 +1037,16 @@
         "sell_balance": 2895400,
         "margin_date": "2026-05-22",
         "buy_change_4w": -11.4
-      }
+      },
+      "entry_current": {
+        "est_open": 1146,
+        "low": 1140,
+        "high": 1151
+      },
+      "stop_loss_current": 1124,
+      "target_current": 1180,
+      "lot_current": 3664,
+      "gap_pct": 0.88
     },
     {
       "code": "6508",
@@ -997,7 +1114,16 @@
         "sell_balance": 29800,
         "margin_date": "2026-05-22",
         "buy_change_4w": -26.7
-      }
+      },
+      "entry_current": {
+        "est_open": 10809,
+        "low": 10754,
+        "high": 10863
+      },
+      "stop_loss_current": 10603,
+      "target_current": 11133,
+      "lot_current": 388,
+      "gap_pct": 0.92
     },
     {
       "code": "4208",
@@ -1058,7 +1184,16 @@
         "sell_balance": 152100,
         "margin_date": "2026-05-22",
         "buy_change_4w": -1.7
-      }
+      },
+      "entry_current": {
+        "est_open": 2957,
+        "low": 2942,
+        "high": 2971
+      },
+      "stop_loss_current": 2900,
+      "target_current": 3045,
+      "lot_current": 1420,
+      "gap_pct": 0.92
     },
     {
       "code": "9552",
@@ -1138,7 +1273,16 @@
         "sell_balance": 172700,
         "margin_date": "2026-05-22",
         "buy_change_4w": -31.1
-      }
+      },
+      "entry_current": {
+        "est_open": 812,
+        "low": 807,
+        "high": 816
+      },
+      "stop_loss_current": 796,
+      "target_current": 836,
+      "lot_current": 5172,
+      "gap_pct": 0.87
     },
     {
       "code": "6619",
@@ -1213,7 +1357,16 @@
         "sell_balance": 2229900,
         "margin_date": "2026-05-22",
         "buy_change_4w": 5.2
-      }
+      },
+      "entry_current": {
+        "est_open": 304,
+        "low": 302,
+        "high": 305
+      },
+      "stop_loss_current": 298,
+      "target_current": 313,
+      "lot_current": 13815,
+      "gap_pct": 0.66
     }
   ],
   "history": [
@@ -1226,6 +1379,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 17/17銘柄 決算接近警告0 APIリクエスト68",
       "timestamp": "2026-05-28T20:07:14.954345+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: NEUTRAL（低）先物+0.9% (active:17 standby:0)",
+      "timestamp": "2026-05-29T07:03:22.385901+09:00"
     }
   ],
   "stage_metadata": {
@@ -1234,7 +1392,11 @@
       "completed_at": "2026-05-28T20:05:11.315013+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-05-28T20:05:11.315018+09:00"
+      "started_at": "2026-05-28T20:05:11.315018+09:00",
+      "completed_at": "2026-05-29T07:03:22.385839+09:00"
+    },
+    "stage3_7am": {
+      "started_at": "2026-05-29T07:03:22.385845+09:00"
     }
   }
 }
