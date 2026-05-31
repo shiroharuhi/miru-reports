@@ -1,8 +1,8 @@
 {
   "date": "2026-06-01",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-06-01T06:13:28.931189+09:00",
-  "updated_at": "2026-06-01T06:13:28.931300+09:00",
+  "updated_at": "2026-06-01T07:31:57.908235+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
     "narrative_status": null,
@@ -23,30 +23,30 @@
     "usdjpy": "159.34円（+0.07円）",
     "sector_top3": [
       {
-        "name": "小売",
-        "change": 1.05
-      },
-      {
-        "name": "素材・化学",
-        "change": 0.86
-      },
-      {
         "name": "電機・精密",
-        "change": 0.45
+        "change": 2.9
+      },
+      {
+        "name": "小売",
+        "change": 2.44
+      },
+      {
+        "name": "不動産",
+        "change": 2.38
       }
     ],
     "sector_worst3": [
       {
+        "name": "エネルギー資源",
+        "change": -0.35
+      },
+      {
+        "name": "食品",
+        "change": 0.38
+      },
+      {
         "name": "鉄鋼・非鉄",
-        "change": -2.45
-      },
-      {
-        "name": "銀行",
-        "change": -1.69
-      },
-      {
-        "name": "電力・ガス",
-        "change": -1.54
+        "change": 0.39
       }
     ]
   },
@@ -1496,6 +1496,16 @@
       "stage": "stage3",
       "action": "7am判定: NEUTRAL（低）先物+0.7% (active:17 standby:0)",
       "timestamp": "2026-06-01T06:13:28.931274+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: GREEN→effective:GREEN (active:17 standby:0)",
+      "timestamp": "2026-06-01T07:31:57.900750+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=long score=0.3",
+      "timestamp": "2026-06-01T07:31:57.908206+09:00"
     }
   ],
   "stage_metadata": {
@@ -1524,6 +1534,6 @@
     "direction": "long",
     "momentum": "strong",
     "representative_set_id": "set_neutral_default",
-    "generated_at": "2026-05-29T07:52:14.760937+09:00"
+    "generated_at": "2026-06-01T07:31:57.906071+09:00"
   }
 }
