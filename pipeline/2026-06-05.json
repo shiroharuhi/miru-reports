@@ -2,7 +2,7 @@
   "date": "2026-06-05",
   "pipeline_stage": "stage2_narrative",
   "created_at": "2026-06-04T19:24:10.643003+09:00",
-  "updated_at": "2026-06-04T21:16:37.921639+09:00",
+  "updated_at": "2026-06-04T23:11:03.592295+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
     "narrative_status": "YELLOW",
@@ -961,6 +961,11 @@
       "stage": "stage2",
       "action": "ナラティブ照合完了: YELLOW リスク0件 触媒0件 (active:13 standby:0)",
       "timestamp": "2026-06-04T21:16:37.921615+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク0件 触媒0件 (active:13 standby:0)",
+      "timestamp": "2026-06-04T23:11:03.592264+09:00"
     }
   ],
   "stage_metadata": {
