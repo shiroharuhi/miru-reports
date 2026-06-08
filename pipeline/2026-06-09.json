@@ -1,15 +1,15 @@
 {
   "date": "2026-06-09",
-  "pipeline_stage": "stage3_7am",
+  "pipeline_stage": "stage4_morning",
   "created_at": "2026-06-08T20:53:47.865573+09:00",
-  "updated_at": "2026-06-09T06:59:26.878595+09:00",
+  "updated_at": "2026-06-09T07:55:40.096993+09:00",
   "jiai": {
     "screening_jiai": "RED",
     "narrative_status": "YELLOW",
     "direction_7am": "BUY",
     "direction_confidence": "低",
-    "morning_jiai": null,
-    "effective_jiai": null,
+    "morning_jiai": "YELLOW",
+    "effective_jiai": "YELLOW",
     "futures_direction": null,
     "final_judgment": null
   },
@@ -21,8 +21,34 @@
     "futures_gap_pct": 2.2572834491915956,
     "vix": "18.9",
     "usdjpy": "160.11円（+0.12円）",
-    "sector_top3": [],
-    "sector_worst3": []
+    "sector_top3": [
+      {
+        "name": "小売",
+        "change": 1.46
+      },
+      {
+        "name": "食品",
+        "change": 1.36
+      },
+      {
+        "name": "医薬品",
+        "change": 1.0
+      }
+    ],
+    "sector_worst3": [
+      {
+        "name": "鉄鋼・非鉄",
+        "change": -5.88
+      },
+      {
+        "name": "電機・精密",
+        "change": -5.15
+      },
+      {
+        "name": "機械",
+        "change": -4.24
+      }
+    ]
   },
   "narrative": {
     "headline": "LLM disabled",
@@ -65,7 +91,8 @@
       "flags": [
         "⚠️ROE低迷",
         "⚠️低収益",
-        "⚠️財務リスク"
+        "⚠️財務リスク",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -92,6 +119,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️財務リスク"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -149,7 +181,8 @@
         "📊財務良好",
         "📊高収益",
         "📉減収",
-        "📉減益"
+        "📉減益",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -181,6 +214,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📉減益"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -383,7 +421,8 @@
       "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "📊ROE優秀"
+        "📊ROE優秀",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -400,6 +439,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📊ROE優秀"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -532,7 +576,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "📈増益"
+        "📈増益",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -554,6 +599,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📈増益"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -608,7 +658,8 @@
       "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "📊財務良好"
+        "📊財務良好",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -625,6 +676,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📊財務良好"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -741,7 +797,8 @@
       "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "📊財務良好"
+        "📊財務良好",
+        "💪セクター強"
       ],
       "history": [
         {
@@ -758,6 +815,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "📊財務良好"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "💪セクター強"
         }
       ],
       "fundamental": {
@@ -814,7 +876,8 @@
       "flags": [
         "📊財務良好",
         "📊高収益",
-        "📈増益"
+        "📈増益",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -841,6 +904,11 @@
           "stage": "stage3",
           "action": "active → standby",
           "reason": "BUY判定（低）→ SELL候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -896,7 +964,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "📈増益"
+        "📈増益",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -918,6 +987,11 @@
           "stage": "stage3",
           "action": "active → standby",
           "reason": "BUY判定（低）→ SELL候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -973,7 +1047,8 @@
       "added_at": "stage1_screening",
       "flags": [
         "📊財務良好",
-        "📈増益"
+        "📈増益",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -995,6 +1070,11 @@
           "stage": "stage3",
           "action": "active → standby",
           "reason": "BUY判定（低）→ SELL候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1051,7 +1131,8 @@
       "flags": [
         "⚠️ROE低迷",
         "📉減収",
-        "📉減益"
+        "📉減益",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -1078,6 +1159,11 @@
           "stage": "stage3",
           "action": "active → standby",
           "reason": "BUY判定（低）→ SELL候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1131,7 +1217,8 @@
       "status": "standby",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️ROE低迷"
+        "⚠️ROE低迷",
+        "⚠️セクター弱"
       ],
       "history": [
         {
@@ -1148,6 +1235,11 @@
           "stage": "stage3",
           "action": "active → standby",
           "reason": "BUY判定（低）→ SELL候補は待機"
+        },
+        {
+          "stage": "stage4",
+          "action": "flagged",
+          "reason": "⚠️セクター弱"
         }
       ],
       "fundamental": {
@@ -1331,6 +1423,16 @@
       "stage": "stage3",
       "action": "7am判定: BUY（低）先物+2.3% (active:0 standby:17)",
       "timestamp": "2026-06-09T06:59:26.878568+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "地合い確定: YELLOW→effective:YELLOW (active:0 standby:17)",
+      "timestamp": "2026-06-09T07:55:40.089649+09:00"
+    },
+    {
+      "stage": "stage4",
+      "action": "G1 Resolver 完了: adopted_source=g1_final_base valid=True direction=neutral score=0.55",
+      "timestamp": "2026-06-09T07:55:40.096963+09:00"
     }
   ],
   "stage_metadata": {
@@ -1347,7 +1449,22 @@
       "completed_at": "2026-06-09T06:59:26.878479+09:00"
     },
     "stage3_7am": {
-      "started_at": "2026-06-09T06:59:26.878485+09:00"
+      "started_at": "2026-06-09T06:59:26.878485+09:00",
+      "completed_at": "2026-06-09T07:55:40.089584+09:00"
+    },
+    "stage4_morning": {
+      "started_at": "2026-06-09T07:55:40.089592+09:00"
     }
+  },
+  "g1_adopted_metadata": {
+    "adopted_source": "g1_final_base",
+    "fallback_used": false,
+    "fallback_reason": null,
+    "valid": true,
+    "g1_score": 0.55,
+    "direction": "neutral",
+    "momentum": "weak",
+    "representative_set_id": "set_neutral_default",
+    "generated_at": "2026-06-09T07:55:40.094464+09:00"
   }
 }
