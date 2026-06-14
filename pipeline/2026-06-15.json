@@ -1,11 +1,11 @@
 {
   "date": "2026-06-15",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage2_narrative",
   "created_at": "2026-06-12T20:16:56.801975+09:00",
-  "updated_at": "2026-06-12T20:18:44.645887+09:00",
+  "updated_at": "2026-06-14T22:03:46.656036+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
-    "narrative_status": null,
+    "narrative_status": "YELLOW",
     "direction_7am": null,
     "direction_confidence": null,
     "morning_jiai": null,
@@ -25,7 +25,7 @@
     "sector_worst3": []
   },
   "narrative": {
-    "headline": null,
+    "headline": "LLM disabled",
     "risks": [],
     "catalysts": []
   },
@@ -961,6 +961,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 15/15銘柄 決算接近警告0 APIリクエスト60",
       "timestamp": "2026-06-12T20:18:44.645781+09:00"
+    },
+    {
+      "stage": "stage2",
+      "action": "ナラティブ照合完了: YELLOW リスク0件 触媒0件 (active:10 standby:5)",
+      "timestamp": "2026-06-14T22:03:46.656020+09:00"
     }
   ],
   "stage_metadata": {
@@ -969,7 +974,11 @@
       "completed_at": "2026-06-12T20:16:57.773940+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-06-12T20:16:57.773945+09:00"
+      "started_at": "2026-06-12T20:16:57.773945+09:00",
+      "completed_at": "2026-06-14T22:03:46.655989+09:00"
+    },
+    "stage2_narrative": {
+      "started_at": "2026-06-14T22:03:46.655994+09:00"
     }
   }
 }
