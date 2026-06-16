@@ -1,13 +1,13 @@
 {
   "date": "2026-06-17",
-  "pipeline_stage": "stage1_5_fundamental",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-06-16T21:20:17.723887+09:00",
-  "updated_at": "2026-06-16T21:21:37.064962+09:00",
+  "updated_at": "2026-06-17T07:21:58.966721+09:00",
   "jiai": {
     "screening_jiai": "YELLOW",
     "narrative_status": null,
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "NEUTRAL",
+    "direction_confidence": "低",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "5.13%",
     "topix_change": null,
-    "dow_change": "nan%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
-    "vix": "16.1",
-    "usdjpy": "0.39円",
+    "dow_change": "52,000ドル（+0.64%）",
+    "nasdaq_change": "26,376（-1.15%）",
+    "futures_gap_pct": -0.8231925554760201,
+    "vix": "16.4",
+    "usdjpy": "160.42円（+0.47円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -84,7 +84,16 @@
         "revenue_growth": 5.8,
         "oi_growth": 15.2,
         "equity_ratio": 55.7
-      }
+      },
+      "entry_current": {
+        "est_open": 20023,
+        "low": 19922,
+        "high": 20123
+      },
+      "stop_loss_current": 19642,
+      "target_current": 20623,
+      "lot_current": 209,
+      "gap_pct": -0.83
     },
     {
       "code": "6857",
@@ -159,7 +168,16 @@
         "oi_growth": 179.5,
         "equity_ratio": 59.3,
         "dividend_yield": 0.6
-      }
+      },
+      "entry_current": {
+        "est_open": 30090,
+        "low": 29939,
+        "high": 30240
+      },
+      "stop_loss_current": 29518,
+      "target_current": 30992,
+      "lot_current": 139,
+      "gap_pct": -0.82
     },
     {
       "code": "5802",
@@ -216,7 +234,16 @@
         "oi_growth": 41.5,
         "equity_ratio": 57.0,
         "dividend_yield": 3.94
-      }
+      },
+      "entry_current": {
+        "est_open": 12218,
+        "low": 12156,
+        "high": 12279
+      },
+      "stop_loss_current": 11985,
+      "target_current": 12584,
+      "lot_current": 343,
+      "gap_pct": -0.83
     },
     {
       "code": "6981",
@@ -285,7 +312,16 @@
         "oi_growth": 29.8,
         "equity_ratio": 85.2,
         "dividend_yield": 2.47
-      }
+      },
+      "entry_current": {
+        "est_open": 10443,
+        "low": 10390,
+        "high": 10495
+      },
+      "stop_loss_current": 10244,
+      "target_current": 10756,
+      "lot_current": 402,
+      "gap_pct": -0.83
     },
     {
       "code": "7011",
@@ -348,7 +384,16 @@
         "oi_growth": 35.6,
         "equity_ratio": 35.2,
         "dividend_yield": 0.91
-      }
+      },
+      "entry_current": {
+        "est_open": 3778,
+        "low": 3759,
+        "high": 3796
+      },
+      "stop_loss_current": 3706,
+      "target_current": 3891,
+      "lot_current": 1111,
+      "gap_pct": -0.84
     },
     {
       "code": "3563",
@@ -411,7 +456,16 @@
         "oi_growth": 54.3,
         "equity_ratio": 24.6,
         "dividend_yield": 0.45
-      }
+      },
+      "entry_current": {
+        "est_open": 10066,
+        "low": 10015,
+        "high": 10116
+      },
+      "stop_loss_current": 9874,
+      "target_current": 10367,
+      "lot_current": 417,
+      "gap_pct": -0.83
     },
     {
       "code": "2802",
@@ -474,7 +528,16 @@
         "oi_growth": 13.7,
         "equity_ratio": 18.3,
         "dividend_yield": 1.09
-      }
+      },
+      "entry_current": {
+        "est_open": 5103,
+        "low": 5077,
+        "high": 5128
+      },
+      "stop_loss_current": 5006,
+      "target_current": 5256,
+      "lot_current": 823,
+      "gap_pct": -0.84
     },
     {
       "code": "6506",
@@ -537,7 +600,16 @@
         "oi_growth": -24.3,
         "equity_ratio": 58.0,
         "dividend_yield": 1.69
-      }
+      },
+      "entry_current": {
+        "est_open": 6788,
+        "low": 6754,
+        "high": 6821
+      },
+      "stop_loss_current": 6659,
+      "target_current": 6991,
+      "lot_current": 618,
+      "gap_pct": -0.83
     },
     {
       "code": "7741",
@@ -592,7 +664,16 @@
         "revenue_growth": 9.4,
         "equity_ratio": 78.4,
         "dividend_yield": 1.11
-      }
+      },
+      "entry_current": {
+        "est_open": 26842,
+        "low": 26707,
+        "high": 26976
+      },
+      "stop_loss_current": 26332,
+      "target_current": 27647,
+      "lot_current": 156,
+      "gap_pct": -0.82
     },
     {
       "code": "4506",
@@ -653,7 +734,16 @@
         "operating_margin": 7.2,
         "revenue_growth": 26.8,
         "equity_ratio": 22.8
-      }
+      },
+      "entry_current": {
+        "est_open": 1474,
+        "low": 1466,
+        "high": 1481
+      },
+      "stop_loss_current": 1445,
+      "target_current": 1518,
+      "lot_current": 2849,
+      "gap_pct": -0.87
     },
     {
       "code": "6997",
@@ -721,7 +811,16 @@
         "revenue_growth": -18.6,
         "oi_growth": -60.3,
         "equity_ratio": 34.8
-      }
+      },
+      "entry_current": {
+        "est_open": 4502,
+        "low": 4479,
+        "high": 4524
+      },
+      "stop_loss_current": 4416,
+      "target_current": 4637,
+      "lot_current": 932,
+      "gap_pct": -0.84
     },
     {
       "code": "4047",
@@ -777,7 +876,16 @@
         "revenue_growth": -3.7,
         "equity_ratio": 54.7,
         "dividend_yield": 1.95
-      }
+      },
+      "entry_current": {
+        "est_open": 3729,
+        "low": 3710,
+        "high": 3747
+      },
+      "stop_loss_current": 3658,
+      "target_current": 3840,
+      "lot_current": 1126,
+      "gap_pct": -0.82
     }
   ],
   "history": [
@@ -790,6 +898,11 @@
       "stage": "stage1.5",
       "action": "ファンダチェック完了: 12/12銘柄 決算接近警告0 APIリクエスト48",
       "timestamp": "2026-06-16T21:21:37.064872+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: NEUTRAL（低）先物-0.8% (active:12 standby:0)",
+      "timestamp": "2026-06-17T07:21:58.966694+09:00"
     }
   ],
   "stage_metadata": {
@@ -798,7 +911,11 @@
       "completed_at": "2026-06-16T21:20:18.446234+09:00"
     },
     "stage1_5_fundamental": {
-      "started_at": "2026-06-16T21:20:18.446240+09:00"
+      "started_at": "2026-06-16T21:20:18.446240+09:00",
+      "completed_at": "2026-06-17T07:21:58.966630+09:00"
+    },
+    "stage3_7am": {
+      "started_at": "2026-06-17T07:21:58.966635+09:00"
     }
   }
 }
