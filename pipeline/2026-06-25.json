@@ -1,13 +1,13 @@
 {
   "date": "2026-06-25",
-  "pipeline_stage": "stage2_narrative",
+  "pipeline_stage": "stage3_7am",
   "created_at": "2026-06-24T19:24:18.073064+09:00",
-  "updated_at": "2026-06-24T22:28:09.128847+09:00",
+  "updated_at": "2026-06-25T06:41:38.686597+09:00",
   "jiai": {
     "screening_jiai": "GREEN",
     "narrative_status": "YELLOW",
-    "direction_7am": null,
-    "direction_confidence": null,
+    "direction_7am": "NEUTRAL",
+    "direction_confidence": "低",
     "morning_jiai": null,
     "effective_jiai": null,
     "futures_direction": null,
@@ -16,11 +16,11 @@
   "market": {
     "nikkei_change": "-0.88%",
     "topix_change": null,
-    "dow_change": "-0.09%",
-    "nasdaq_change": null,
-    "futures_gap_pct": null,
-    "vix": "19.4",
-    "usdjpy": "0.18円",
+    "dow_change": "51,849ドル（+0.35%）",
+    "nasdaq_change": "25,477（-0.43%）",
+    "futures_gap_pct": 2.8014440433212995,
+    "vix": "18.6",
+    "usdjpy": "161.74円（+0.17円）",
     "sector_top3": [],
     "sector_worst3": []
   },
@@ -63,7 +63,8 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️信用倍率10.73倍"
+        "⚠️信用倍率10.73倍",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -75,6 +76,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率10.73倍"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -83,7 +89,16 @@
         "sell_balance": 83000,
         "margin_date": "2026-06-19",
         "buy_change_4w": 6.9
-      }
+      },
+      "entry_current": {
+        "est_open": 3603,
+        "low": 3584,
+        "high": 3621
+      },
+      "stop_loss_current": 3534,
+      "target_current": 3711,
+      "lot_current": 1165,
+      "gap_pct": 2.8
     },
     {
       "code": "4062",
@@ -117,12 +132,19 @@
       "lot_base": 169,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り厳選条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -131,7 +153,16 @@
         "sell_balance": 845500,
         "margin_date": "2026-06-19",
         "buy_change_4w": 39.5
-      }
+      },
+      "entry_current": {
+        "est_open": 25479,
+        "low": 25351,
+        "high": 25606
+      },
+      "stop_loss_current": 24994,
+      "target_current": 26243,
+      "lot_current": 164,
+      "gap_pct": 2.8
     },
     {
       "code": "6526",
@@ -165,12 +196,19 @@
       "lot_base": 1584,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り厳選条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -179,7 +217,16 @@
         "sell_balance": 1096100,
         "margin_date": "2026-06-19",
         "buy_change_4w": -2.9
-      }
+      },
+      "entry_current": {
+        "est_open": 2724,
+        "low": 2710,
+        "high": 2737
+      },
+      "stop_loss_current": 2672,
+      "target_current": 2805,
+      "lot_current": 1541,
+      "gap_pct": 2.79
     },
     {
       "code": "2264",
@@ -213,12 +260,19 @@
       "lot_base": 836,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り厳選条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -227,7 +281,16 @@
         "sell_balance": 21300,
         "margin_date": "2026-06-19",
         "buy_change_4w": 35.9
-      }
+      },
+      "entry_current": {
+        "est_open": 5160,
+        "low": 5134,
+        "high": 5185
+      },
+      "stop_loss_current": 5061,
+      "target_current": 5314,
+      "lot_current": 813,
+      "gap_pct": 2.79
     },
     {
       "code": "6269",
@@ -262,7 +325,8 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "⚠️信用倍率48.53倍"
+        "⚠️信用倍率48.53倍",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -274,6 +338,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "⚠️信用倍率48.53倍"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -282,7 +351,16 @@
         "sell_balance": 32300,
         "margin_date": "2026-06-19",
         "buy_change_4w": -6.9
-      }
+      },
+      "entry_current": {
+        "est_open": 10444,
+        "low": 10391,
+        "high": 10496
+      },
+      "stop_loss_current": 10245,
+      "target_current": 10757,
+      "lot_current": 402,
+      "gap_pct": 2.8
     },
     {
       "code": "4578",
@@ -317,7 +395,8 @@
       "status": "active",
       "added_at": "stage1_screening",
       "flags": [
-        "🔥買残急増4w+77.0%"
+        "🔥買残急増4w+77.0%",
+        "⚠️追いかけ注意"
       ],
       "history": [
         {
@@ -329,6 +408,11 @@
           "stage": "stage1.5",
           "action": "flagged",
           "reason": "🔥買残急増4w+77.0%"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -337,7 +421,16 @@
         "sell_balance": 24600,
         "margin_date": "2026-06-19",
         "buy_change_4w": 77.0
-      }
+      },
+      "entry_current": {
+        "est_open": 11174,
+        "low": 11118,
+        "high": 11229
+      },
+      "stop_loss_current": 10961,
+      "target_current": 11509,
+      "lot_current": 375,
+      "gap_pct": 2.8
     },
     {
       "code": "6504",
@@ -371,12 +464,19 @@
       "lot_base": 285,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り補欠条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -385,7 +485,16 @@
         "sell_balance": 50800,
         "margin_date": "2026-06-19",
         "buy_change_4w": -16.9
-      }
+      },
+      "entry_current": {
+        "est_open": 15101,
+        "low": 15025,
+        "high": 15176
+      },
+      "stop_loss_current": 14814,
+      "target_current": 15554,
+      "lot_current": 278,
+      "gap_pct": 2.8
     },
     {
       "code": "4503",
@@ -419,12 +528,19 @@
       "lot_base": 1945,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り補欠条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -433,7 +549,16 @@
         "sell_balance": 504400,
         "margin_date": "2026-06-19",
         "buy_change_4w": 5.2
-      }
+      },
+      "entry_current": {
+        "est_open": 2219,
+        "low": 2207,
+        "high": 2230
+      },
+      "stop_loss_current": 2176,
+      "target_current": 2285,
+      "lot_current": 1892,
+      "gap_pct": 2.78
     },
     {
       "code": "6651",
@@ -467,12 +592,19 @@
       "lot_base": 881,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り補欠条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -481,7 +613,16 @@
         "sell_balance": 19900,
         "margin_date": "2026-06-19",
         "buy_change_4w": 20.3
-      }
+      },
+      "entry_current": {
+        "est_open": 4898,
+        "low": 4873,
+        "high": 4922
+      },
+      "stop_loss_current": 4804,
+      "target_current": 5044,
+      "lot_current": 857,
+      "gap_pct": 2.79
     },
     {
       "code": "9706",
@@ -515,12 +656,19 @@
       "lot_base": 861,
       "status": "active",
       "added_at": "stage1_screening",
-      "flags": [],
+      "flags": [
+        "⚠️追いかけ注意"
+      ],
       "history": [
         {
           "stage": "stage1_screening",
           "action": "selected",
           "reason": "順張り補欠条件クリア"
+        },
+        {
+          "stage": "stage3",
+          "action": "flagged",
+          "reason": "⚠️追いかけ注意"
         }
       ],
       "fundamental": {
@@ -529,7 +677,16 @@
         "sell_balance": 27500,
         "margin_date": "2026-06-19",
         "buy_change_4w": 14.2
-      }
+      },
+      "entry_current": {
+        "est_open": 5011,
+        "low": 4985,
+        "high": 5036
+      },
+      "stop_loss_current": 4915,
+      "target_current": 5161,
+      "lot_current": 838,
+      "gap_pct": 2.79
     },
     {
       "code": "6966",
@@ -589,7 +746,16 @@
         "sell_balance": 393300,
         "margin_date": "2026-06-19",
         "buy_change_4w": 30.9
-      }
+      },
+      "entry_current": {
+        "est_open": 1078,
+        "low": 1072,
+        "high": 1083
+      },
+      "stop_loss_current": 1057,
+      "target_current": 1110,
+      "lot_current": 3896,
+      "gap_pct": 2.76
     },
     {
       "code": "6387",
@@ -649,7 +815,16 @@
         "sell_balance": 2500,
         "margin_date": "2026-06-19",
         "buy_change_4w": 8.7
-      }
+      },
+      "entry_current": {
+        "est_open": 14536,
+        "low": 14463,
+        "high": 14608
+      },
+      "stop_loss_current": 14259,
+      "target_current": 14972,
+      "lot_current": 288,
+      "gap_pct": 2.8
     },
     {
       "code": "6101",
@@ -709,7 +884,16 @@
         "sell_balance": 25100,
         "margin_date": "2026-06-19",
         "buy_change_4w": 2.3
-      }
+      },
+      "entry_current": {
+        "est_open": 7668,
+        "low": 7629,
+        "high": 7706
+      },
+      "stop_loss_current": 7522,
+      "target_current": 7898,
+      "lot_current": 547,
+      "gap_pct": 2.79
     }
   ],
   "history": [
@@ -727,6 +911,11 @@
       "stage": "stage2",
       "action": "ナラティブ照合完了: YELLOW リスク0件 触媒0件 (active:10 standby:3)",
       "timestamp": "2026-06-24T22:28:09.128826+09:00"
+    },
+    {
+      "stage": "stage3",
+      "action": "7am判定: NEUTRAL（低）先物+2.8% (active:10 standby:3)",
+      "timestamp": "2026-06-25T06:41:38.686570+09:00"
     }
   ],
   "stage_metadata": {
@@ -739,7 +928,11 @@
       "completed_at": "2026-06-24T22:28:09.128796+09:00"
     },
     "stage2_narrative": {
-      "started_at": "2026-06-24T22:28:09.128801+09:00"
+      "started_at": "2026-06-24T22:28:09.128801+09:00",
+      "completed_at": "2026-06-25T06:41:38.686481+09:00"
+    },
+    "stage3_7am": {
+      "started_at": "2026-06-25T06:41:38.686487+09:00"
     }
   }
 }
